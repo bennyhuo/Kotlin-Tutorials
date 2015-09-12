@@ -15,10 +15,11 @@
 
 ###1、概述
 
-[1.1 简介与HelloWorld演示](http://share.weiyun.com/39446c1b6441136f2bc924a60a633bbc)
+[1.1 Kotlin简介](http://share.weiyun.com/39446c1b6441136f2bc924a60a633bbc)
 
 1.2 Gradle 简介 [计划10月16日发布]
 
+1.3 HelloWorld
 
 ### 2、基本语法
 2.1 类型与变量
