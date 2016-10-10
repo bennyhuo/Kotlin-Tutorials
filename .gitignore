@@ -1,0 +1,5 @@
+videos
+build
+*.gradle
+*.iml
+.idea
