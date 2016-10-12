@@ -7,7 +7,7 @@
 
 从10月初开始，每周四录制，周六、日发布，每期视频控制在20分钟左右。
 
-视频上传主要以微云为主，目前微云还不能在线播放，据了解该功能将在近期推出~~
+[下载全部视频](http://pan.baidu.com/s/1nvGYAfB)
 
 # 目录
 
@@ -15,11 +15,11 @@
 
 ###1、概述
 
-[1.1 Kotlin简介](http://share.weiyun.com/39446c1b6441136f2bc924a60a633bbc)
+[1.1 Kotlin简介](http://pan.baidu.com/s/1eRXR9TK)
 
-1.2 Gradle 简介 [计划10月16日发布]
+[1.2 环境搭建和 Hello World程序](http://pan.baidu.com/s/1gfJmI3L)
 
-1.3 HelloWorld
+[1.3 使用Gradle编写程序简介](http://pan.baidu.com/s/1hrPacpI)
 
 ### 2、基本语法
 2.1 类型与变量
