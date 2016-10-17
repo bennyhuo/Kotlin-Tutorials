@@ -7,6 +7,8 @@
 
 从10月初开始，每期视频控制在10-20分钟，更新间隔视情况而定，尽量在每周能至少更新一期。
 
+* 10月14日：思考了一下，我决定将视频的内容调整为几个案例，而不是传统的教条式的讲述，因为。。我录得时候发现我自己都困了哈哈
+
 [下载全部视频](http://pan.baidu.com/s/1nvGYAfB)
 
 # 目录
@@ -15,61 +17,22 @@
 
 ###1、概述
 
-[1.1 Kotlin简介](http://pan.baidu.com/s/1eRXR9TK)
+[1.1 Kotlin 简介](https://pan.baidu.com/s/1eScB6BS)
 
-[1.2 环境搭建和 Hello World程序](http://pan.baidu.com/s/1gfJmI3L)
+[1.2 Hello World](http://pan.baidu.com/s/1gfJmI3L)
 
-[1.3 使用Gradle编写程序简介](http://pan.baidu.com/s/1hrPacpI)
+[1.3 使用Gradle编写程序简介（可选）](http://pan.baidu.com/s/1hrPacpI)
 
-### 2、基本语法
-2.1 类型与变量
+###2、几个小程序了解Kotlin的基本语法
 
-2.2 运算符
+[2.1 集合遍历 map](https://pan.baidu.com/s/1mi77wAO)
 
-2.3 控制语句
+[2.2 集合扁平化 flatMap](https://pan.baidu.com/s/1qYguRXq)
 
-2.4 函数
+[2.3 枚举类型与When表达式](https://pan.baidu.com/s/1i5dlsZb)
 
-2.5 Lambda 表达式
+2.4 类、空安全
 
-2.6 内联函数
-
-### 3、面向对象
-
-3.0 什么是面向对象
-
-3.1 类与继承
-
-3.2 属性与方法
-
-3.3 接口
-
-3.4 伴生对象
-
-3.5 单例与匿名内部类
-
-3.6 数据类
-
-3.7 枚举
-
-3.8 属性代理
-
-3.9 扩展方法
-
-3.10 运算符重载
-
-3.11 类型空安全
-
-3.12 toString、hashCode、equals
-
-3.13 Smart-Cast
-
-### 4、集合框架
-
-### 5、反射
-
-### 6、泛型
-
-### 7、其他问题
+2.5 Delegate
 
 ## 第二部分 使用 Kotlin 进行 Android 开发
