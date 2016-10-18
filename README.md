@@ -9,7 +9,9 @@
 
 * 10月14日：思考了一下，我决定将视频的内容调整为几个案例，而不是传统的教条式的讲述，因为。。我录得时候发现我自己都困了哈哈
 
-[下载全部视频](http://pan.baidu.com/s/1nvGYAfB)
+[在线收看全部视频（腾讯视频）](http://v.qq.com/boke/gplay/903446d6231d8612d198c58fb86eb4dc_t6d000101bd9lx1.html)
+
+[下载全部视频（百度云）](http://pan.baidu.com/s/1nvGYAfB)
 
 # 目录
 
@@ -17,19 +19,19 @@
 
 ###1、概述
 
-[1.1 Kotlin 简介](https://pan.baidu.com/s/1eScB6BS)
+[1.1 Kotlin 简介](http://v.qq.com/page/z/u/9/z0337i7a3u9.html)
 
-[1.2 Hello World](http://pan.baidu.com/s/1gfJmI3L)
+[1.2 Hello World](http://v.qq.com/page/h/n/m/h0337jfa5nm.html)
 
-[1.3 使用Gradle编写程序简介（可选）](http://pan.baidu.com/s/1hrPacpI)
+[1.3 使用Gradle编写程序简介（可选）](http://v.qq.com/page/b/p/l/b03372ox4pl.html)
 
 ###2、几个小程序了解Kotlin的基本语法
 
-[2.1 集合遍历 map](https://pan.baidu.com/s/1mi77wAO)
+[2.1 集合遍历 map](http://v.qq.com/page/s/q/c/s033707mdqc.html)
 
-[2.2 集合扁平化 flatMap](https://pan.baidu.com/s/1qYguRXq)
+[2.2 集合扁平化 flatMap](http://v.qq.com/page/h/u/7/h0337scgau7.html)
 
-[2.3 枚举类型与When表达式](https://pan.baidu.com/s/1i5dlsZb)
+[2.3 枚举类型与When表达式](http://v.qq.com/page/t/0/9/t0337iacg09.html)
 
 2.4 类、空安全
 
