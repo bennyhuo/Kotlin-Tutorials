@@ -33,9 +33,7 @@
 
 [2.3 枚举类型与When表达式](http://v.qq.com/page/t/0/9/t0337iacg09.html)
 
-2.4 类、空安全
-
-2.5 Delegate
+即将推出： 在 RxJava 中使用 Lambda
 
 ## 第二部分 使用 Kotlin 进行 Android 开发
 
