@@ -33,7 +33,7 @@
 
 [2.3 枚举类型与When表达式](http://v.qq.com/page/t/0/9/t0337iacg09.html)
 
-即将推出： 在 RxJava 中使用 Lambda<font color=red>[10.26: 录制完毕，校对中]</font>
+即将推出： 在 RxJava 中使用 Lambda<font color=red>[10.26: 已经上传腾讯视频，审核中。百度网盘可下载]</font>
 
 ## 第二部分 使用 Kotlin 进行 Android 开发
 
