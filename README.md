@@ -35,7 +35,7 @@
 
 [2.4 在 RxJava 中使用 Lambda](http://v.qq.com/x/page/l0340boeng7.html)
 
-即将推出：待定（10.26，策划中）
+即将推出：使用 Retrofit 发送 GET 请求（10.30，Demo编写完毕，待录制）
 
 ## 第二部分 使用 Kotlin 进行 Android 开发
 
