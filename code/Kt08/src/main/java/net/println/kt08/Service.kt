@@ -9,9 +9,7 @@ import retrofit2.http.Path
 /**
  * Created by benny on 10/28/16.
  */
-
 interface GithubService {
-
     @GET("/repos/{user}/{repo}/stargazers")
     fun getStarGazers(@Path("user") user: String, @Path("repo") repo: String): Call<List<User>>
 }
