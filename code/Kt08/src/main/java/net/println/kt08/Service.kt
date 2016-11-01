@@ -7,19 +7,21 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 
 /**
- * Created by benny on 10/28/16.
+ * Created by benny on 11/1/16.
  */
-interface GithubService {
+interface GitHubService{
+
     @GET("/repos/{user}/{repo}/stargazers")
     fun getStarGazers(@Path("user") user: String, @Path("repo") repo: String): Call<List<User>>
 }
 
-object ServiceFactory {
-    val gitHub: GithubService by lazy {
-        Retrofit.Builder().baseUrl("https://api.gitHub.com").addConverterFactory(GsonConverterFactory.create()).build().create(GithubService::class.java)
+object Service{
+    val gitHub: GitHubService by lazy {
+        Retrofit.Builder().baseUrl("https://api.github.com").addConverterFactory(GsonConverterFactory.create()).build().create(GitHubService::class.java)
     }
 }
 
 fun main(args: Array<String>) {
-    ServiceFactory.gitHub.getStarGazers("enbandari", "Kotlin-Tutorials").execute().body().map(::println)
+    Service.gitHub.getStarGazers("enbandari", "Kotlin-Tutorials").execute().body().map(::println)
 }
+
