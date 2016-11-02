@@ -35,7 +35,7 @@
 
 [RxJava](https://github.com/ReactiveX/RxJava) 是一个非常流行的 Java Reactive 框架，函数式的数据操作使得 Lambda 表达式可以充分体现自己的优势，比起 Java 的冗长，你会看到一段非常漂亮简洁的代码。建议大家先阅读 [RxJava](https://github.com/ReactiveX/RxJava) 的官方文章以对其有一些基本的认识。
 
-####即将推出：使用 Retrofit 发送 GET 请求（11.1，录制中）
+####[08 使用 Retrofit 发送 GET 请求](http://v.qq.com/x/page/t0342thu1al.html)
 [Retrofit](https://square.github.io/retrofit/) 是 Square 的 Jake 大神开源的RESTful 网络请求框架，用它发送请求的感觉会让你感觉爽爆的。我这里还有几篇文章，以及一个我 hack 过的分支 [HackRetrofit](https://github.com/enbandari/HackRetrofit)，有兴趣的童鞋可以一起探讨下~
 
 
