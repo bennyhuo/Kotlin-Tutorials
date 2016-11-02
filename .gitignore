@@ -1,6 +1,6 @@
 videos
 build
-*.gradle
+.gradle
 *.iml
 .idea
 out
