@@ -13,6 +13,8 @@
 
 [下载全部视频（百度云）](http://pan.baidu.com/s/1nvGYAfB)
 
+* 11月6日：**大家有什么关心的技术点也可以在issue里面发出来一起讨论哈，我也会根据大家的需求来安排后面的内容。**
+
 # 目录
 
 ##第一部分 语言基础
@@ -44,6 +46,10 @@
 [Android 下午茶：Hack Retrofit (2) 之 Mock Server](http://www.println.net/post/Android-Hack-Retrofit-Mock-Server)
 
 [深入浅出 Retrofit，这么牛逼的框架你们还不来看看？](http://www.println.net/post/deep-in-retrofit)
+
+####09 尾递归 即将推出[11.9 录制中]
+尾递归，顾名思义，就是递归中调用自身的部分在函数体的最后一句。我们知道，递归调用对于栈大小的考验是非常大的，也经常会因为这个导致 StackOverflow，所以尾递归优化也是大家比较关注的一个话题。Kotlin 支持语法层面的尾递归优化，这在其他语言里面是不多见的。
+
 
 
 
