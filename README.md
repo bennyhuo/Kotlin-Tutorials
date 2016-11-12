@@ -7,7 +7,7 @@
 
 关注微信公众号：Kotlin， 获取最新视频更新动态
 
-<img src="arts/kotlin.jpg" width="250px"/>
+<img src="arts/Kotlin.jpg" width="250px"/>
 
 从10月初开始，每期视频控制在10-20分钟，更新间隔视情况而定，尽量在每周能至少更新一期。
 
