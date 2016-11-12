@@ -51,7 +51,7 @@
 
 * [深入浅出 Retrofit，这么牛逼的框架你们还不来看看？](http://www.println.net/post/deep-in-retrofit)
 
-####[09 尾递归优化](http://v.qq.com/x/page/s0345c6csw1.html)
+####[09 尾递归优化](http://v.qq.com/x/page/f0345wmuw2m.html)
 　　尾递归，顾名思义，就是递归中调用自身的部分在函数体的最后一句。我们知道，递归调用对于栈大小的考验是非常大的，也经常会因为这个导致 StackOverflow，所以尾递归优化也是大家比较关注的一个话题。Kotlin 支持语法层面的尾递归优化，这在其他语言里面是不多见的。
 
 
