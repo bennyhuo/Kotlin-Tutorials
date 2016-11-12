@@ -5,13 +5,17 @@
 
 # 发布计划
 
+关注微信公众号：Kotlin， 获取最新视频更新动态
+
+<img src="arts/kotlin.jpg" width="250px"/>
+
 从10月初开始，每期视频控制在10-20分钟，更新间隔视情况而定，尽量在每周能至少更新一期。
 
 * 10月14日：思考了一下，我决定将视频的内容调整为几个案例，而不是传统的教条式的讲述，因为。。我录得时候发现我自己都困了哈哈
 
-[在线收看全部视频（腾讯视频）](http://v.qq.com/boke/gplay/903446d6231d8612d198c58fb86eb4dc_t6d000101bd9lx1.html)
-
-[下载全部视频（百度云）](http://pan.baidu.com/s/1nvGYAfB)
+	[在线收看全部视频（腾讯视频）](http://v.qq.com/boke/gplay/903446d6231d8612d198c58fb86eb4dc_t6d000101bd9lx1.html)
+	
+	[下载全部视频（百度云）](http://pan.baidu.com/s/1nvGYAfB)
 
 * 11月6日：**大家有什么关心的技术点也可以在issue里面发出来一起讨论哈，我也会根据大家的需求来安排后面的内容。**
 
@@ -33,22 +37,22 @@
 
 ####[07 在 RxJava 中使用 Lambda](http://v.qq.com/x/page/l0340boeng7.html)
 
-这一期通过一个统计文章中字符数的小程序进一步给大家呈现 Lambda 的威力，也向大家展示一下如何在 Kotlin 当中优雅地使用 RxJava。我不做教科书，所以如果大家对概念感兴趣，可以直接阅读官方 [API](https://kotlinlang.org/docs/reference/lambdas.html)
+　　这一期通过一个统计文章中字符数的小程序进一步给大家呈现 Lambda 的威力，也向大家展示一下如何在 Kotlin 当中优雅地使用 RxJava。我不做教科书，所以如果大家对概念感兴趣，可以直接阅读官方 [API](https://kotlinlang.org/docs/reference/lambdas.html)
 
-[RxJava](https://github.com/ReactiveX/RxJava) 是一个非常流行的 Java Reactive 框架，函数式的数据操作使得 Lambda 表达式可以充分体现自己的优势，比起 Java 的冗长，你会看到一段非常漂亮简洁的代码。建议大家先阅读 [RxJava](https://github.com/ReactiveX/RxJava) 的官方文章以对其有一些基本的认识。
+　　[RxJava](https://github.com/ReactiveX/RxJava) 是一个非常流行的 Java Reactive 框架，函数式的数据操作使得 Lambda 表达式可以充分体现自己的优势，比起 Java 的冗长，你会看到一段非常漂亮简洁的代码。建议大家先阅读 [RxJava](https://github.com/ReactiveX/RxJava) 的官方文章以对其有一些基本的认识。
 
 ####[08 使用 Retrofit 发送 GET 请求](http://v.qq.com/x/page/t0342thu1al.html)
-[Retrofit](https://square.github.io/retrofit/) 是 Square 的 Jake 大神开源的RESTful 网络请求框架，用它发送请求的感觉会让你感觉爽爆的。我这里还有几篇文章，以及一个我 hack 过的分支 [HackRetrofit](https://github.com/enbandari/HackRetrofit)，有兴趣的童鞋可以一起探讨下~
+　　[Retrofit](https://square.github.io/retrofit/) 是 Square 的 Jake 大神开源的RESTful 网络请求框架，用它发送请求的感觉会让你感觉爽爆的。我这里还有几篇文章，以及一个我 hack 过的分支 [HackRetrofit](https://github.com/enbandari/HackRetrofit)，有兴趣的童鞋可以一起探讨下~
 
 
-[Android 下午茶：Hack Retrofit 之 增强参数](http://www.println.net/post/Android-Hack-Retrofit).
+* [Android 下午茶：Hack Retrofit 之 增强参数](http://www.println.net/post/Android-Hack-Retrofit).
 
-[Android 下午茶：Hack Retrofit (2) 之 Mock Server](http://www.println.net/post/Android-Hack-Retrofit-Mock-Server)
+* [Android 下午茶：Hack Retrofit (2) 之 Mock Server](http://www.println.net/post/Android-Hack-Retrofit-Mock-Server)
 
-[深入浅出 Retrofit，这么牛逼的框架你们还不来看看？](http://www.println.net/post/deep-in-retrofit)
+* [深入浅出 Retrofit，这么牛逼的框架你们还不来看看？](http://www.println.net/post/deep-in-retrofit)
 
 ####[09 尾递归优化](http://v.qq.com/x/page/s0345c6csw1.html)
-尾递归，顾名思义，就是递归中调用自身的部分在函数体的最后一句。我们知道，递归调用对于栈大小的考验是非常大的，也经常会因为这个导致 StackOverflow，所以尾递归优化也是大家比较关注的一个话题。Kotlin 支持语法层面的尾递归优化，这在其他语言里面是不多见的。
+　　尾递归，顾名思义，就是递归中调用自身的部分在函数体的最后一句。我们知道，递归调用对于栈大小的考验是非常大的，也经常会因为这个导致 StackOverflow，所以尾递归优化也是大家比较关注的一个话题。Kotlin 支持语法层面的尾递归优化，这在其他语言里面是不多见的。
 
 
 
