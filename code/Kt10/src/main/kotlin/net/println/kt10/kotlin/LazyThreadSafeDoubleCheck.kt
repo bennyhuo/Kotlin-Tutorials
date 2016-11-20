@@ -5,11 +5,11 @@ package net.println.kt10.kotlin
  */
 class LazyThreadSafeDoubleCheck private constructor(){
     companion object{
-        val instance = lazy(mode = LazyThreadSafetyMode.SYNCHRONIZED){
+        val instance by lazy(mode = LazyThreadSafetyMode.SYNCHRONIZED){
             LazyThreadSafeDoubleCheck()
         }
 
-        @Volatile var instance2: LazyThreadSafeDoubleCheck? = null
+        private @Volatile var instance2: LazyThreadSafeDoubleCheck? = null
 
         fun getInstance() = {
             if(instance2 == null){

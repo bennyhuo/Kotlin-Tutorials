@@ -6,7 +6,9 @@ package net.println.kt10.java;
 public class PlainOldSingleton {
     private static PlainOldSingleton INSTANCE = new PlainOldSingleton();
 
-    private PlainOldSingleton(){}
+    private PlainOldSingleton(){
+        System.out.println("PlainOldSingleton");
+    }
 
     public static PlainOldSingleton getInstance(){
         return INSTANCE;

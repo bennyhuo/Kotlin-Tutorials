@@ -5,7 +5,7 @@ package net.println.kt10.kotlin
  */
 class LazyNotThreadSafe {
     companion object{
-        val instance = lazy {
+        val instance by lazy(LazyThreadSafetyMode.NONE) {
             LazyNotThreadSafe()
         }
 
