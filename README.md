@@ -27,16 +27,28 @@
 
 ####[01 Kotlin 简介](http://v.qq.com/page/z/u/9/z0337i7a3u9.html)
 
+　　简要介绍下什么是 Kotlin，新语言太多了，大家为什么要接触 Kotlin 呢？因为它除了长得与 Java 不太像以外，其他的都差不多~
+  
 ####[02 Hello World](http://v.qq.com/page/h/n/m/h0337jfa5nm.html)
 
+　　千里之行，始于Hello World！
+  
 ####[03 使用Gradle编写程序简介（可选）](http://v.qq.com/page/b/p/l/b03372ox4pl.html)
 
+　　这年头，写 Java 系的代码，不知道 Gradle 怎么行呢？
+  
 ####[04 集合遍历 map](http://v.qq.com/page/s/q/c/s033707mdqc.html)
 
+　　放下 i++，你不知道 map 已经占领世界了么？以前我以为 map-reduce 很牛逼，后来才知道就是数据迭代处理嘛。
+  
 ####[05 集合扁平化 flatMap](http://v.qq.com/page/h/u/7/h0337scgau7.html)
 
+　　这个可以说是 map 的一个加强版，返回的仍然是开一个可迭代的集合，用哪个您自己看需求~
+  
 ####[06 枚举类型与When表达式](http://v.qq.com/page/t/0/9/t0337iacg09.html)
 
+　　Kotlin 丢掉了 switch，却引进了 when，这二者看上去极其相似，不过后者却要强大得多。至于枚举嘛，还是 Java 枚举的老样子。
+  
 ####[07 在 RxJava 中使用 Lambda](http://v.qq.com/x/page/l0340boeng7.html)
 
 　　这一期通过一个统计文章中字符数的小程序进一步给大家呈现 Lambda 的威力，也向大家展示一下如何在 Kotlin 当中优雅地使用 RxJava。我不做教科书，所以如果大家对概念感兴趣，可以直接阅读官方 [API](https://kotlinlang.org/docs/reference/lambdas.html)
