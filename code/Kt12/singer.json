@@ -1,0 +1,18 @@
+{
+  "id": 1,
+  "name": "Unknown",
+  "songs": [
+    {
+      "id": 0,
+      "name": "Rada"
+    },
+    {
+      "id": 1,
+      "name": "Olympic Dream"
+    },
+    {
+      "id": 2,
+      "name": "The Escapist"
+    }
+  ]
+}
