@@ -1,4 +1,4 @@
-# [Kotlin从入门到『放弃』](https://github.com/enbandari/Kotlin-Tutorials)
+# [Kotlin从入门到『放弃』](https://github.com/enbandari/Kotlin-Tutorials) [持续更新中]
 随着Kotlin越来越成熟稳定，我已经开始在生产环境中使用它。考虑到目前国内资料较少，近期我开始筹划录制一套视频教程，并以此抛砖引玉，让 Kotlin 在国内火起来。
 
 个人水平有限，不足之处欢迎大家发邮件到 [bennyhuo@println.net](mailto: bennyhuo@println.net)，谢谢大家！
@@ -18,7 +18,8 @@
 	[下载全部视频（百度云）](http://pan.baidu.com/s/1nvGYAfB)
 
 * 11月6日：大家有什么关心的技术点也可以在issue里面发出来一起讨论哈，我也会根据大家的需求来安排后面的内容。
-* 11月28日：**有朋友问我，为什么要『放弃』。。。额，这是一个用来自嘲的梗嘛，大家不信去搜搜 『Java 从入门到放弃』 ：）**
+* 11月28日：有朋友问我，为什么要『放弃』。。。额，这是一个用来自嘲的梗嘛，大家不信去搜搜 『Java 从入门到放弃』 ：）
+* 12月2日：**有朋友说内容太少啦，不够看！我首先要表示一下感谢，谢谢诸位的关注和支持~这套视频是我在工作之余抽时间录制的，一个视频虽然只有10分钟，不过内容点却不太好想，通常一个视频我会尝试准备几个点，最终选择一个合适的录制，所以更新速度不会太快，不过，我会尽量保证在每周一更新一期，说实话我也挺着急，哈哈~还有一个事情就是，编程语言这个东西本身并不难，难的是它身后的一大家子（生态），Kotlin 的身后就是积累多年的 Java 生态，如果大家对视频有疑问，尽管发邮件或者直接开 issue 跟我讨论，我也可以考虑录一些『番外篇』来解答这些问题，谢谢大家的支持！**
 
 # 目录
 
@@ -26,16 +27,28 @@
 
 ####[01 Kotlin 简介](http://v.qq.com/page/z/u/9/z0337i7a3u9.html)
 
+　　简要介绍下什么是 Kotlin，新语言太多了，大家为什么要接触 Kotlin 呢？因为它除了长得与 Java 不太像以外，其他的都差不多~
+  
 ####[02 Hello World](http://v.qq.com/page/h/n/m/h0337jfa5nm.html)
 
+　　千里之行，始于Hello World！
+  
 ####[03 使用Gradle编写程序简介（可选）](http://v.qq.com/page/b/p/l/b03372ox4pl.html)
 
+　　这年头，写 Java 系的代码，不知道 Gradle 怎么行呢？
+  
 ####[04 集合遍历 map](http://v.qq.com/page/s/q/c/s033707mdqc.html)
 
+　　放下 i++，你不知道 map 已经占领世界了么？以前我以为 map-reduce 很牛逼，后来才知道就是数据迭代处理嘛。
+  
 ####[05 集合扁平化 flatMap](http://v.qq.com/page/h/u/7/h0337scgau7.html)
 
+　　这个可以说是 map 的一个加强版，返回的仍然是开一个可迭代的集合，用哪个您自己看需求~
+  
 ####[06 枚举类型与When表达式](http://v.qq.com/page/t/0/9/t0337iacg09.html)
 
+　　Kotlin 丢掉了 switch，却引进了 when，这二者看上去极其相似，不过后者却要强大得多。至于枚举嘛，还是 Java 枚举的老样子。
+  
 ####[07 在 RxJava 中使用 Lambda](http://v.qq.com/x/page/l0340boeng7.html)
 
 　　这一期通过一个统计文章中字符数的小程序进一步给大家呈现 Lambda 的威力，也向大家展示一下如何在 Kotlin 当中优雅地使用 RxJava。我不做教科书，所以如果大家对概念感兴趣，可以直接阅读官方 [API](https://kotlinlang.org/docs/reference/lambdas.html)
