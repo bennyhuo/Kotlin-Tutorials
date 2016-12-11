@@ -1,0 +1,41 @@
+group 'net.println'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    ext.kotlin_version = '1.0.5-2'
+    ext.dagger_version = "2.8"
+    ext.retrofit_version = "2.1.0"
+
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'kotlin'
+apply plugin: 'kotlin-kapt'
+
+sourceCompatibility = 1.5
+
+repositories {
+    jcenter()
+}
+
+sourceSets {
+  main.java.srcDirs += [file("$buildDir/generated/source/kapt2/main")]
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    compile "com.squareup.retrofit2:retrofit:$retrofit_version"
+    compile "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    compile "com.squareup.retrofit2:adapter-rxjava:$retrofit_version"
+
+    compile "com.google.dagger:dagger:${dagger_version}"
+    kapt "com.google.dagger:dagger-compiler:${dagger_version}"
+
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}

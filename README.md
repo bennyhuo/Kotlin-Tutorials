@@ -78,6 +78,34 @@
 ####[12 Json数据引发的血案](https://v.qq.com/x/page/s035296s9nw.html) 
 　　Json 数据可真是大红大紫一番，它实在是太容易理解了，随着 Js 的火爆它就更加『肆无忌惮』起来。我们在 Java/Kotlin 当中解析它的时候经常会用到 Gson 这个库，用它来解析数据究竟会遇到哪些问题？本期主要围绕 Json 解析的几个小例子，给大家展示一下 Java/Kotlin 的伪泛型设计的问题，以及不完整的数据的解析对语言本身特性的冲击。
 
+####[13 kapt 以及它的小伙伴们]() **12.12 发布**
+　　首先感谢 @CodingPapi 建议我做一期关于注解的视频。
+
+　　Kotiln 对于注解的支持情况在今年（2016）取得了较大的成果，现在除了对 @Inherited 这个注解的支持还不够之外，试用了一下没有发现太大的问题。关于 kapt，官方的文章罗列下来，其中
+
+* [kapt: Annotation Processing for Kotlin
+](https://blog.jetbrains.com/kotlin/2015/05/kapt-annotation-processing-for-kotlin/) 已经过时了，大家可以阅读下了解其中提到的三个方案
+
+* [Better Annotation Processing: Supporting Stubs in kapt
+](https://blog.jetbrains.com/kotlin/2015/06/better-annotation-processing-supporting-stubs-in-kapt/) 提到的实现其实基本上就是现在的正式版
+
+* [Kotlin 1.0.4 is here
+](https://blog.jetbrains.com/kotlin/2016/09/kotlin-1-0-4-is-here/)提到了 kapt 的正式发布，需要注意的是，kapt 的使用方法有些变化，需要 ```apply plugin: 'kotlin-kapt'```
+
+　　本期主要通过几个简单的 [Dagger2](https://google.github.io/dagger/) 实例给大家展示了注解在 Kotlin 当中的使用，看上去其实与在 Java 中使用区别不大，生成的源码也暂时是 Java 代码，不过这都不重要了，反正是要编译成 class 文件的。
+
+　　后面我们又简单分析了一下 Dagger2 以及 [ButterKnife](https://github.com/JakeWharton/butterknife) 的源码（有兴趣的话也可以看下我直接对后者进行分析和 Hack 的一篇文章：[深入浅出 ButterKnife，听说你还在 findViewById？](http://www.println.net/post/Deep-in-ButterKnife-3)），其实自己实现一个注解处理器是非常容易的，类似的框架还有[androidannotations](https://github.com/androidannotations/androidannotations)，它的源码大家可以自行阅读。
+
+****
+通过这个例子，我们其实发现 kapt 还是有一些不完善的地方，主要是：
+
+1. 不支持 @Inherited 
+2. 生成的源码需要手动添加到 SourceSets 中 
+3. 编译时有时候需要手动操作一下 gralde 的 build 才能生成源码（这一点大家注意下就行了，我在视频中并没有提到）
+
+不过总体来讲，kapt 的现状还是不错的，相信不久的将来这些问题都将不是问题。
+****
+
 
 ## 第二部分 使用 Kotlin 进行 Android 开发
 
