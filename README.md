@@ -1,4 +1,4 @@
-# [Kotlin从入门到『放弃』](https://github.com/enbandari/Kotlin-Tutorials) [持续更新中]
+# [ Kotlin 从入门到『放弃』](https://github.com/enbandari/Kotlin-Tutorials) [持续更新中]
 随着Kotlin越来越成熟稳定，我已经开始在生产环境中使用它。考虑到目前国内资料较少，近期我开始筹划录制一套视频教程，并以此抛砖引玉，让 Kotlin 在国内火起来。
 
 个人水平有限，不足之处欢迎大家发邮件到 [bennyhuo@println.net](mailto: bennyhuo@println.net)，谢谢大家！
