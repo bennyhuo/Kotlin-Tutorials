@@ -82,7 +82,7 @@ void apply(Map<String, ?> config);
 实际上，apply 是 PluginAware 的一个方法，后面的 plugin 呢？ 那不过是一个 k-v 对而已，在 groovy 当中， K:V 的形式可以表示一个键值对。那既然参数是 Map，那我要是多传几个参数是不是也可以呢？
 
 ```groovy
-apply plugin: (['kotlin', 宝宝: "不开心"])
+apply ([plugin: 'kotlin', 宝宝: "不开心"])
 ```
 
 不过这样虽然多传了一个键值对，不过由于 gradle 并不关心 “宝宝”，所以 “宝宝：不开心”那也没有办法了，说了也白说。哈哈。
