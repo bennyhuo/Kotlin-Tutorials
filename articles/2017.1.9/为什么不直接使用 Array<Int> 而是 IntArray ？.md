@@ -1,8 +1,8 @@
-# 为什么不直接使用 Array <Int> 而是 IntArray ？
+# 为什么不直接使用 ```Array<Int>``` 而是 IntArray ？
 
 ## 基本类型居然有特殊待遇
 
-其实我们用数组的场景不太多。有一天在做demo的时候，我突然意识到有 Array <Int> 和 IntArray 这两种完全不同的存在，当时我感觉非常的奇怪，为什么要再搞一个 IntArray 呢？不仅 IntArray，还有 DoubleArray、LongArray 等等，所有基本类型都有一个专属的 Array 版本，这背后一定有什么原因的。
+其实我们用数组的场景不太多。有一天在做demo的时候，我突然意识到有 ```Array<Int>``` 和 IntArray 这两种完全不同的存在，当时我感觉非常的奇怪，为什么要再搞一个 IntArray 呢？不仅 IntArray，还有 DoubleArray、LongArray 等等，所有基本类型都有一个专属的 Array 版本，这背后一定有什么原因的。
 
 偏偏巧了，kotlin-runtime 这个 jar 包里面对应的 kotlin.kotlin_builtins 这个文件没有源码，所以直接跳进去看到的 IntArray 的声明什么都没有。。
 
