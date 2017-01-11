@@ -11,14 +11,14 @@ class LazyThreadSafeDoubleCheck private constructor(){
 
         private @Volatile var instance2: LazyThreadSafeDoubleCheck? = null
 
-        fun getInstance() = {
+        fun get(): LazyThreadSafeDoubleCheck {
             if(instance2 == null){
                 synchronized(this){
                     if(instance2 == null)
                         instance2 = LazyThreadSafeDoubleCheck()
                 }
             }
-            instance2!!
+            return instance2!!
         }
     }
 }
