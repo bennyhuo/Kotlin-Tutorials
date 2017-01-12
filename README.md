@@ -1,3 +1,5 @@
+[![GitHub license](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
 # [Kotlin从入门到『放弃』系列 视频教程](https://github.com/enbandari/Kotlin-Tutorials) 
 
 随着Kotlin越来越成熟稳定，我已经开始在生产环境中使用它。考虑到目前国内资料较少，近期我开始筹划录制一套视频教程，并以此抛砖引玉，让 Kotlin 在国内火起来。
