@@ -283,7 +283,9 @@ INVOKEVIRTUAL android/widget/TextView.setText (Ljava/lang/CharSequence;)V
 v.getstatic(packageName.replace(".", "/") + "/R\$id", resourceId.name, "I")
     
 //INVOKEVIRTUAL net/println/kotlinandroiddemo/MainActivity._$_findCachedViewById (I)Landroid/view/View;
-v.invokevirtual(declarationDescriptorType.internalName, CACHED_FIND_VIEW_BY_ID_METHOD_NAME, "(I)Landroid/view/View;", false)
+v.invokevirtual(declarationDescriptorType.internalName, 
+	CACHED_FIND_VIEW_BY_ID_METHOD_NAME, 
+	"(I)Landroid/view/View;", false)
 ...
 ```
 
