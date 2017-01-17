@@ -40,7 +40,7 @@ class Player {
     }
 
     private fun doPlay(url: String, position: Long) {
-        //todo
+        TODO("Play function not yet implemented")
     }
 
     private fun doResume(){
