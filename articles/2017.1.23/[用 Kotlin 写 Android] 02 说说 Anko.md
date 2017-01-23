@@ -215,13 +215,136 @@ fun TextView.useSecondary(){
     textColor = Color.GRAY
 }
 ```
-这个算是比较复杂的一个布局了，其实用 Anko DSL 的方式都可以完成，而且写出来的东西都可以直接对应到源码，这一点是非常棒的。我们在使用 XML 布局的时候如果想要知道某一个属性对应 View 的什么成语，还得去找这个 View 解析 XML 的代码，显然这一点 DSL 要方便一些。
+这个算是比较复杂的一个布局了，只要 XML 可以搞定的用 Anko DSL 的方式一样可以搞定，而且写出来的东西都可以直接对应到源码，这一点是非常棒的。我们在使用 XML 布局的时候如果想要知道某一个属性对应 View 的什么成员，还得去找这个 View 解析 XML 的代码，显然这一点 DSL 要方便一些。
 
-### 2.4 Anko DSL 使用小结
+### 2.4 独立的 UI 
+
+前面我们说到的都是在 Activity 的 onCreate 方法中使用 DSL 的场景。很多时候我们其实还是希望布局和 Activity 分开的，那么我们就可以用官方推荐的这种方式来给 Activity 设置布局：
+
+```kotlin
+class MyActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
+        super.onCreate(savedInstanceState, persistentState)
+        MyActivityUI().setContentView(this)
+    }
+}
+
+class MyActivityUI : AnkoComponent<MyActivity> {
+    override fun createView(ui: AnkoContext<MyActivity>) = with(ui) {
+        verticalLayout {
+            val name = editText()
+            button("Say Hello") {
+                onClick { ctx.toast("Hello, ${name.text}!") }
+            }
+        }
+    }
+}
+```
+
+### 2.5 在任意位置用 DSL 定义 View
+
+前面提到的各种 ```relativeLayout {}``` 也好，```verticalLayout {}``` 也好，都只能在 Activity、ViewManager（ViewGroup 的接口）、Context 这三个类的作用域范围之内使用，换句话说前面的几个布局的方法都是这几个类的扩展方法。
+
+下面这个写法是没有问题的：
+
+```kotlin
+fun createView(context: Context): View{
+	return context.relativeLayout{
+		...
+	}
+}
+```
+相应的，我们可以用任意一个 ViewGroup 的子类来调用类似的方法，这与调用 ```viewRoot.addView(FrameLayout(viewRoot.context))``` 是一样的：
+
+```kotlin
+fun addViewToParent(viewRoot: ViewGroup){
+    viewRoot.frameLayout { 
+        ...
+    }
+}
+```
+
+如果是在 Fragment 当中，Anko 还非常贴心的定义了一个叫 UI 的方法，这个方法同时也存在于 Context 当中，用法也比较简单：
+
+```
+class MainFragment: Fragment(){
+    override fun onCreateView(
+            inflater: LayoutInflater?, 
+            container: ViewGroup?, 
+            savedInstanceState: Bundle?): View {
+        return UI {
+            tableLayout { 
+                ...
+            }
+        }.view
+    }
+}
+```
+
+### 2.6 扩展 Anko，支持自定义 View
+
+我们在开发中经常继承一个 View 实现一些自己想要的功能，比如我们继承 _RelativeLayout:
+
+```kotlin
+class CustomLayout(context: Context)
+    : _RelativeLayout(context) {
+ 	...   
+}
+```
+
+注意，如果我们直接继承 RelativeLayout，那么还需要自己定义 lparams 方法，这个我就不细说了，大家有需求可以自己详细研究~
+
+为了让 Anko DSL 支持下面的写法：
+
+```kotlin
+customLayout{
+	button("ClickMe"){ ... }
+}
+```
+
+我们需要定义下面三组扩展方法：
+
+```kotlin
+inline fun ViewManager.customLayout(theme: Int = 0) 
+        = customLayout(theme) {}
+inline fun ViewManager.customLayout(
+        theme: Int = 0, 
+        init: CustomLayout.() -> Unit) 
+        = ankoView(::CustomLayout, theme, init)
+
+inline fun Activity.customLayout(theme: Int = 0) 
+        = customLayout(theme) {}
+inline fun Activity.customLayout(
+        theme: Int = 0, 
+        init: CustomLayout.() -> Unit) 
+        = ankoView(::CustomLayout, theme, init)
+
+inline fun Context.customLayout(theme: Int = 0) 
+        = customLayout(theme) {}
+inline fun Context.customLayout(
+        theme: Int = 0, 
+        init: CustomLayout.() -> Unit) 
+        = ankoView(::CustomLayout, theme, init)
+
+```
+
+其中，第一组 ViewManager 的是为了在 ViewGroup 当中使用；第二组是为了在 Activity 当中使用，第三组就是为了在所有 Context 当中使用。
+
+扩展也是非常简单的，用起来也丝毫感觉不到这些 View 是自定义的，比起 XML 标签长长的一串确实也要美观得多。
+
+```xml
+<net.println.kotlinandroiddemo.CustomLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+		...
+</net.println.kotlinandroiddemo.CustomLayout>
+```
+
+### 2.7 Anko DSL 使用小结
 
 Anko DSL 的方式布局看上去还是比较清爽直观的，而且因为这是 Kotlin 代码，自然所有的view 都是强类型约束的，不需要我们 findViewById 再强转，除此之外由于是代码，可以直接运行，也就省去了运行时解析 XML 的开销，这一点可以说也是相比于 Android 官方的 XML 布局而言 Anko 主打的性能优势。
 
-说归说，它的这些优势用眼一看便知，可是它存在哪些问题呢？
+它的各方面优势我们在前面已经给大家一一点到，可是它存在哪些问题呢？
 
 * 首先，Anko DSL 布局不能预览。可以说这一点足以让我们放弃它了，不能预览的话很多时候我们只能通过运行结果来判断布局是否准确，这对开发效率的影响是巨大的。当然，这么说可能 Anko 不服，毕竟人家也是发布了一个叫 Anko Preview Plugin 的 IDE 插件的，有了这个插件理论上我们就可以预览 Anko DSL 的布局结果了对吧？可是结果呢，每次做了修改都需要 make 一下才可以看到结果，显然预览速度来看不如 XML 快。而就算这个问题我们可以忍，慢就慢点儿，别慢太多就行了吧，结果呢，人家这个插件存在各种各样的问题，比如对最新版的 Android Studio 2.2 和 IntelliJ 2016.3 不支持（当然其实本质上是对新版本的 Preview 功能不兼容），大家可以参考这个 issue：[https://github.com/Kotlin/anko/issues/202](https://github.com/Kotlin/anko/issues/202)。也就是说，这个插件现在是不能用的，所以跟没有也没啥区别。
 * 其次，对于 id 的定义会比较蛋疼。我们知道我们在布局的时候可以通过 ```@+id/xxx``` 的方式生成一个 id，并交给 Android 资源管理器统一管理，用 Anko DSL 的话我们就得专门定义一个变量或者在 value 目录下面增加 id 的定义（就像 2.3 的例子那样）去让 view 引用。不用 id 行不行呢？你去问问 RelativeLayout 答应不答应吧。
@@ -242,7 +365,7 @@ Anko DSL 的方式布局看上去还是比较清爽直观的，而且因为这�
         }
     }
 	```
-* 再次，我们通常会需要引用一些 view，通过 XML 布局 + kotlin-android-extensions 的方式，我们可以直接引用到这些有 id 的 view，非常方便，不过，如果我们用 Anko DSL 布局的话，我们就享受不到这项福利了（如果你不明白为什么，可以去看下我的前一篇文章）。
+* 再次，我们通常会需要引用一些 view，通过 XML 布局 + kotlin-android-extensions 的方式，我们可以直接引用到这些有 id 的 view，非常方便，不过，如果我们用 Anko DSL 布局的话，我们就享受不到这项福利了（如果你不明白为什么，可以去看下我的[前一篇文章: 用Kotlin写Android 01 难道只有环境搭建这么简单？](http://mp.weixin.qq.com/s?__biz=MzIzMTYzOTYzNA==&mid=2247483805&idx=1&sn=6382e2a758f4c50c0a31a3d36ccb81e7)）。
 
 	```kotlin
 	val FROM_TEXT = 0
