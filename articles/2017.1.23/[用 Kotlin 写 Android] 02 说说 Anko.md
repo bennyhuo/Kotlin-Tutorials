@@ -72,16 +72,159 @@ class AnotherActivity: AppCompatActivity() {
 
 **再等等！那个 ```relativeLayout{...}```是几个意思？？**
 
-嗯，这个要多说几句了，Anko 这个框架虽然打着简化开发的旗号，不过野心终归还是不小的。它自己搞出一套用 Kotlin 写布局的 DSL，换句话说，有了 Anko 我们布局甚至可以不需要用 XML 了，也不需要像用 Java 硬编码 View 那么繁琐，只需要通过几句 DSL 就可以搞定。
+嗯，这个要多说几句了，Anko 这个框架虽然打着简化开发的旗号，不过野心终归还是不小的。它自己搞出一套用 Kotlin 写布局的 DSL，换句话说，有了 Anko 我们布局甚至可以不需要用 XML 了，也不需要像用 Java 硬编码 View 那么繁琐，只需要通过几句 DSL 就可以搞定。我们来多看几个例子：
 
-前面的例子就是这样，我们在 onCreate 当中定义了一个 RelativeLayout，其中又添加了一个 TextView 作为它的子 View，紧接着又给这个 TextView 设置了内容。
+### 2.1 水平布局
+
+下面是是三个按钮水平等分布局的写法，我们用到的实际上就是线性布局，比较简单，button 的参数是按钮的文字（有较多重载的版本，大家可以酌情选择），lparams 的参数有三个，前两个分别是宽、高，最后一个是一个 Lambda 表达式，我们可以在这个Lambda表达式当中详细定义我们需要的布局，比如设置 margin 等等。
+
+```kotlin
+linearLayout {
+    button("1").lparams(wrapContent, wrapContent){
+        weight = 1f
+    }
+    button("2").lparams(wrapContent, wrapContent){
+        weight = 1f
+    }
+    button("3").lparams(wrapContent, wrapContent){
+        weight = 1f
+    }
+}
+```
+效果图如下：
+
+![](linear.png)
+
+### 2.2 纵向布局
+
+还是线性布局，不过换了个方向，你当然可以这么写：
+
+```kotlin
+linearLayout {
+    orientation = LinearLayout.VERTICAL
+    button("1").lparams(wrapContent, wrapContent){
+        weight = 1f
+    }
+    button("2").lparams(wrapContent, wrapContent){
+        weight = 1f
+    }
+    button("3").lparams(wrapContent, wrapContent){
+        weight = 1f
+    }
+}
+```
+不过，Anko 更倾向于让我们用这个：
+
+```kotlin
+verticalLayout {
+    button("1").lparams(wrapContent, wrapContent){
+        weight = 1f
+    }
+    button("2").lparams(wrapContent, wrapContent){
+        weight = 1f
+    }
+    button("3").lparams(wrapContent, wrapContent){
+        weight = 1f
+    }
+}
+```
+
+我给大家看一下源码，大家就分分钟明白了：
+
+```kotlin
+val VERTICAL_LAYOUT_FACTORY = { ctx: Context ->
+    val view = _LinearLayout(ctx)
+    view.orientation = LinearLayout.VERTICAL
+    view
+}
+```
+其实我们创建的 verticalLayout 最终是从这个方法当中获取的，没啥新鲜的，就是设置了一下 orientation 罢了。效果图我就不贴了，大家很容易猜得到。
+
+### 2.3 相对布局
+
+```kotlin
+relativeLayout {
+    relativeLayout {
+        textView("周杰伦") {
+            id = R.id.extra
+            useSecondary()
+        }.lparams(wrapContent, wrapContent) {
+            alignParentRight()
+            centerVertically()
+            rightMargin = dip(10)
+        }
+
+        imageView {
+            id = R.id.avatar
+            imageResource = R.drawable.jaychow
+            scaleType = ImageView.ScaleType.FIT_XY
+        }.lparams(dip(40), dip(40)){
+            centerVertically()
+            leftMargin = dip(10)
+        }
+
+        textView("千里之外") {
+            id = R.id.title
+            usePrimary()
+        }.lparams(matchParent, wrapContent) {
+            leftOf(R.id.extra)
+            rightOf(R.id.avatar)
+            margin = dip(5)
+        }
+
+        textView("依然范特西") {
+            id = R.id.subtitle
+            useSecondary()
+        }.lparams(matchParent, wrapContent) {
+            leftOf(R.id.extra)
+            rightOf(R.id.avatar)
+            below(R.id.title)
+            leftMargin = dip(5)
+        }
+    }.lparams(matchParent, dip(50))
+}
+```
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="title" type="id"/>
+    <item name="subtitle" type="id"/>
+    <item name="extra" type="id"/>
+    <item name="avatar" type="id"/>
+</resources>
+```
+
+这个布局我们看到其实就是一张图片，三个 TextView，难度也不大，不过这种写法可能要适应一下。
+
+效果如下：
+
+![](relative.png)
+
+注意到我在 TextView 当中用了两个方法：usePrimary() 和 useSecondary()，这其实是我定义的样式：
+
+```kotlin
+fun TextView.usePrimary(){
+    textSize = 15f //注意这里就是 sp 的值
+    textColor = Color.BLACK
+    typeface = Typeface.DEFAULT_BOLD
+}
+
+fun TextView.useSecondary(){
+    textSize = 12f //注意这里就是 sp 的值
+    textColor = Color.GRAY
+}
+```
+这个算是比较复杂的一个布局了，其实用 Anko DSL 的方式都可以完成，而且写出来的东西都可以直接对应到源码，这一点是非常棒的。我们在使用 XML 布局的时候如果想要知道某一个属性对应 View 的什么成语，还得去找这个 View 解析 XML 的代码，显然这一点 DSL 要方便一些。
+
+### 2.4 Anko DSL 使用小结
 
 Anko DSL 的方式布局看上去还是比较清爽直观的，而且因为这是 Kotlin 代码，自然所有的view 都是强类型约束的，不需要我们 findViewById 再强转，除此之外由于是代码，可以直接运行，也就省去了运行时解析 XML 的开销，这一点可以说也是相比于 Android 官方的 XML 布局而言 Anko 主打的性能优势。
 
 说归说，它的这些优势用眼一看便知，可是它存在哪些问题呢？
 
 * 首先，Anko DSL 布局不能预览。可以说这一点足以让我们放弃它了，不能预览的话很多时候我们只能通过运行结果来判断布局是否准确，这对开发效率的影响是巨大的。当然，这么说可能 Anko 不服，毕竟人家也是发布了一个叫 Anko Preview Plugin 的 IDE 插件的，有了这个插件理论上我们就可以预览 Anko DSL 的布局结果了对吧？可是结果呢，每次做了修改都需要 make 一下才可以看到结果，显然预览速度来看不如 XML 快。而就算这个问题我们可以忍，慢就慢点儿，别慢太多就行了吧，结果呢，人家这个插件存在各种各样的问题，比如对最新版的 Android Studio 2.2 和 IntelliJ 2016.3 不支持（当然其实本质上是对新版本的 Preview 功能不兼容），大家可以参考这个 issue：[https://github.com/Kotlin/anko/issues/202](https://github.com/Kotlin/anko/issues/202)。也就是说，这个插件现在是不能用的，所以跟没有也没啥区别。
-* 其次，对于 id 的定义会比较蛋疼。我们知道我们在布局的时候可以通过 ```@+id/xxx``` 的方式生成一个 id，并交给 Android 资源管理器统一管理，用 Anko DSL 的话我们就得专门定义一个变量去让 view 引用。不用 id 行不行呢？你去问问 RelativeLayout 答应不答应吧。
+* 其次，对于 id 的定义会比较蛋疼。我们知道我们在布局的时候可以通过 ```@+id/xxx``` 的方式生成一个 id，并交给 Android 资源管理器统一管理，用 Anko DSL 的话我们就得专门定义一个变量或者在 value 目录下面增加 id 的定义（就像 2.3 的例子那样）去让 view 引用。不用 id 行不行呢？你去问问 RelativeLayout 答应不答应吧。
 	
 	```kotlin
     val FROM_TEXT = 0
@@ -99,7 +242,7 @@ Anko DSL 的方式布局看上去还是比较清爽直观的，而且因为这�
         }
     }
 	```
-* 再次，我们通常会需要引用一些 view，通过 XML 布局 + kotlin-android-extensions 的方式，我们可以直接引用到这些有 id 的 view，非常方便，不过，如果我们用 Anko DSL 布局的话，我们就享受不到这项福利了。
+* 再次，我们通常会需要引用一些 view，通过 XML 布局 + kotlin-android-extensions 的方式，我们可以直接引用到这些有 id 的 view，非常方便，不过，如果我们用 Anko DSL 布局的话，我们就享受不到这项福利了（如果你不明白为什么，可以去看下我的前一篇文章）。
 
 	```kotlin
 	val FROM_TEXT = 0
@@ -125,7 +268,7 @@ Anko DSL 的方式布局看上去还是比较清爽直观的，而且因为这�
 	```
 * 还有就是，如果我们的布局有多个版本，而且需要动态替换外部资源以达到换肤的效果，那么 XML 显然比 Kotlin 代码要来得容易：前者可以编译成一个只有资源的 apk 供应用加载，后者的话就得搞一下动态类加载了。
 
-总之，Anko DSL 布局这个特性我个人觉得还没有达到可以取代 XML 布局的地步，如果大家习惯用 Java 硬编码 View 结构的话，Anko DSL 是个不错的选择；相反，如果大家一直用 XML 的话，那请接着用。当然，如果大家有好的使用方式，无论如何要来我这儿跟我嘚瑟一下哈~
+总之，Anko DSL 布局这个特性我个人觉得还没有达到可以取代 XML 布局的地步，如果大家习惯用 Java 硬编码 View 结构的话，Anko DSL 是个非常不错的选择；相反，如果大家一直用 XML 的话，那请接着用 XML 吧。当然，如果大家有好的使用方式，无论如何要来我这儿跟我嘚瑟一下哈~
 
 ## 3、简化异步操作
 
