@@ -266,7 +266,7 @@ fun addViewToParent(viewRoot: ViewGroup){
 
 如果是在 Fragment 当中，Anko 还非常贴心的定义了一个叫 UI 的方法，这个方法同时也存在于 Context 当中，用法也比较简单：
 
-```
+```kotlin
 class MainFragment: Fragment(){
     override fun onCreateView(
             inflater: LayoutInflater?, 
