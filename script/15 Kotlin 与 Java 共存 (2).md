@@ -70,7 +70,7 @@ public abstract class NullSafetyAbsClass {
 ```
 在Kotlin中继承这个类时，formatDate 方法的参数和返回值的类型我们根据情况写：
 
-```Kotlin
+```kotlin
 class NullSafetySubClass : NullSafetyAbsClass(){
     override fun formatDate(date: Date?): String? {
         return date?.toString()
@@ -149,7 +149,18 @@ abstract class Presenter<out V : View<out Presenter<out View<...>>>>{
 
 >This type parameter violates the Finite Bound Restriction.
 
-如果你真的需要写这样的泛型代码，还是用 Java 打个擦边球吧。
+在 @zhangdatou 给我发邮件之前，我曾一直对此耿耿于怀，Kotlin 这么优秀的语言怎么还会有做不到的事情呢。原来不是做不到，而是我没有想到：
+
+```kotlin
+abstract class View<out P: Presenter<View<P>>>
+abstract class Presenter<out V: View<Presenter<V>>>
+
+class MyView: View<MyPresenter>()
+class MyPresenter: Presenter<MyView>()
+```
+实际上我们需要 View 的泛型参数 P 只要是 Presenter 的子类即可，并且要求这个泛型参数 P 本身对应的泛型参数也需要是 View 的子类，而这个 View 其实就是最初的那个 View，那么这个 View 的泛型参数当然就是 P 了。有点儿绕，但这么写出来明显感觉比 Java 安全靠谱多了。
+
+
 
 ## 4 Synchronized 和 volatile
 

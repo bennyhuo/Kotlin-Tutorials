@@ -72,7 +72,6 @@ System.out.println(person.getName() + " is " + person.age); //benny is 27
 person.setName("andy");
 person.age = 26;
 System.out.println(person.getName() + " is " + person.age); //andy is 26
-
 ```
 
 看，这就跟在 Java 当中的一样了。所谓有得必有失，用 @JvmField 标注的属性是不可以声明为 private 的，同时也是不可以像其他 Kotlin 属性那样直接自定义 getter 和 setter 的，你只能像 Java 那样自己写：
@@ -117,7 +116,7 @@ Singleton.INSTANCE.printHello();
 
 Kotlin 的方法可以有默认参数，这样可以省掉很多方法的重载（我们把重写继承自父类的方法叫做覆写 override，名字相同参数不同的方法叫做重载 overload），可 Java 是没有这个特性的。Kotlin 的默认参数通常在 Java 当中是被忽略掉的，例如我们定义这样一个 Kotlin 类：
 
-```Kotlin
+```kotlin
 class Overloads{
 
 	fun overloaded(a: Int, b: Int = 0, c: Int = 1){
@@ -135,7 +134,7 @@ new Overloads().overloaded(0, 0, 1);
 不过，现实也不是如此的残酷，如果我们稍作修改，事情就会好起来：
 
 
-```Kotlin
+```kotlin
 class Overloads{
 	
 	@JvmOverloads
@@ -148,7 +147,7 @@ class Overloads{
 
 这样的话，在 Java 看来 overloaded 方法就多了两个小兄弟，分别是：
 
-```
+```kotlin
 ...
 fun overloaded(a: Int, b: Int = 0)
 
