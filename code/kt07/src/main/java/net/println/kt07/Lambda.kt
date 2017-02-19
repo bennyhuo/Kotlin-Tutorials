@@ -11,11 +11,6 @@ fun main(args: Array<String>) {
             println("${o.key} -> $it")
         }
     }
-
-    val worker = Executors.newCachedThreadPool()
-    worker.execute {
-        println("Hello")
-    }
 }
 
 
