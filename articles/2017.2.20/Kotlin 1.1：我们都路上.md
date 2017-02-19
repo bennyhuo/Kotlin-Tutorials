@@ -22,7 +22,7 @@ Kotlin 则不一样了。它出现的不算早，大概 2010 年的样子吧，�
 
 最早认识 Kotlin 还是在 15 年初，那时候我正热衷于编写 IntelliJ 的插件，尽管后面成果空空，不过一些个莫名其妙的后缀为 kt 的文件却着实让我头疼不已。尽管照着说明安装好 Kotlin 的插件，可因为版本不一致，始终无法编译过去，真是无可奈何啊。当时我还想，又有新语言啊，这可当真是学海无涯咯。
 
-不过，随着接触的机会逐渐增多，我发现 Kotlin 解决了很多我对 Java 不满的问题，而它呢，却又全力支持着 Java 中的一切，始终让我们感觉不到我用了另外一种语言，语法的那点儿差异说真的比起不同语言背后的编程思维的差异来说，简直不值得一提。我在同时尝试了 groovy 和 scala 之后，觉得 Kotlin 才是我想要的，于是在 Kotlin 1.0 发布之际，我向 Bugly 公众号投稿文章：Android 必备技能：最有可能接替Java的语言——Kotlin ，把我眼中的 Kotlin 向大家展现了出来。
+不过，随着接触的机会逐渐增多，我发现 Kotlin 解决了很多我对 Java 不满的问题，而它呢，却又全力支持着 Java 中的一切，始终让我们感觉不到我用了另外一种语言，语法的那点儿差异说真的比起不同语言背后的编程思维的差异来说，简直不值得一提。我在同时尝试了 groovy 和 scala 之后，觉得 Kotlin 才是我想要的，于是在 Kotlin 1.0 发布之际，我向 Bugly 公众号投稿文章：[Android 必备技能：最有可能接替Java的语言——Kotlin](http://www.println.net/post/Android-A-Powerful-Substitution-Kotlin) ，把我眼中的 Kotlin 向大家展现了出来。
 
 
 ##​►Kotlin 给你带来了什么？
@@ -37,7 +37,7 @@ Kotlin 则不一样了。它出现的不算早，大概 2010 年的样子吧，�
 
 话说，自从摊上这么个事儿，我只好每天早晨 6 点起来或写写东西，或看看书，学点儿东西，每天节奏也极其规律，中午再也没没有精力跟小伙伴们组团王者了，因为我得睡一个小时。
 
-年前我又在 Bugly 公众号发了一篇文章：你为什么需要 Kotlin，结果大家都说我是被代码耽误了的段子手，呃。。我想说你们说的很对！
+年前我又在 Bugly 公众号发了一篇文章：[你为什么需要 Kotlin](http://mp.weixin.qq.com/s?__biz=MzA3NTYzODYzMg==&mid=2653578489&idx=1&sn=17d6e657d81c0daa345489271d305b36&chksm=84b3b6feb3c43fe8b0197850bf6ca8caefaa8045671f75ed6dec2171a681496365acfd0ebd33&mpshare=1&scene=23&srcid=0217VmFlkVB0LB4I2YRbvicL#rd)，结果大家都说我是被代码耽误了的段子手，呃。。我想说你们说的很对！
 
 <center>![](right.jpg)</center>
 
