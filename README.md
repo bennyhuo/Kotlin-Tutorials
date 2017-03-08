@@ -6,17 +6,21 @@
 
 个人水平有限，不足之处欢迎大家发邮件到 [bennyhuo@println.net](mailto: bennyhuo@println.net)，谢谢大家！
 
-# 发布计划
-
-关注微信公众号：Kotlin， 获取最新视频更新动态
-
-<img src="arts/Kotlin.jpg" width="250px"/>
+# 介绍
 
 视频从2016年10月初开始发布，更新至12月中旬完结。精力有限，后续暂时每周一通过公众号推送 Kotlin 及 Java 生态的一些文章，大家有选题也可以直接联系我，目前已经有两篇是基于大家的反馈撰写的，反馈也比较不错，谢谢大家的关注与支持。
 
 [在线收看全部视频（腾讯视频）](http://v.qq.com/boke/gplay/903446d6231d8612d198c58fb86eb4dc_t6d000101bd9lx1.html)
 	
 [下载全部视频（百度云）](http://pan.baidu.com/s/1nvGYAfB)
+
+关注微信公众号：Kotlin， 获取最新视频更新动态
+
+<img src="arts/Kotlin.jpg" width="250px"/>
+
+加入 QQ 群 Kotlin ，162452394：
+
+<img src="arts/e_group.png" width="250px"/>
 
 # 目录
 
