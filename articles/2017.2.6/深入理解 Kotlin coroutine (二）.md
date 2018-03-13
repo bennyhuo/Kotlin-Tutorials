@@ -290,7 +290,7 @@ isActive 会在 cancel 之后被置为 false。
 
 ## 6. 携带值的 Job
 
-我们前面说了，通过携程返回的 Job，我们可以控制携程的运行。可有时候我们更关注协程运行的结果，比如从网络加载一张图片：
+我们前面说了，通过协程返回的 Job，我们可以控制协程的运行。可有时候我们更关注协程运行的结果，比如从网络加载一张图片：
 
 ```kotlin
  suspend fun loadImage(url: String): Bitmap { 
