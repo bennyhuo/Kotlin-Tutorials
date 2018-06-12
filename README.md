@@ -1,5 +1,10 @@
 [![GitHub license](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
+# [基于 GitHub App 业务深度讲解 Kotlin1.2高级特性与框架设计](https://coding.imooc.com/class/232.html)
+
+我们在 2018年6月基于 Android 的开发环境推出了一套深入讲解 Kotlin 特性的课程，这套课程以大家最为熟悉的 GitHub App 开发作为整套课程的线索，将 Kotlin 的高级特性一一融入其中予以讲解，这其中我们对泛型、反射、属性代理、协程、Dsl 做了详尽的讲解和框架设计与开发，力求让大家能够对这些技能灵活运用。
+
+
 # [Kotlin 系统入门到进阶 视频教程](http://coding.imooc.com/class/108.html)
 
 这是什么？这是我最新制作的系统讲解 Kotlin 的视频教程，相比较早录制的视频，这套视频在专业团队的协助下完成，内容更适合初学者入门学习；另外，由于 Kotlin 版本更新非常快，新视频也结合了 1.1/1.2 的新特性为大家展开讲解，希望能对大家有帮助~
