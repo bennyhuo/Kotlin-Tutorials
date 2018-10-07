@@ -1,5 +1,11 @@
 [![GitHub license](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
+# [注解处理器开发教程](https://github.com/enbandari/Apt-Tutorials)
+
+我在做 [基于 GitHub App 业务深度讲解 Kotlin1.2高级特性与框架设计](https://coding.imooc.com/class/232.html) 这门课的时候，顺便做了一个注解处理器的框架，叫 [Tieguanyin(铁观音)](https://github.com/enbandari/TieGuanYin)，这个框架主要是用来解决 Activity 跳转时传参的问题，我们知道 Activity 如果需要参数，那么我们只能非常繁琐的使用 `Intent` 来传递，有了这个框架我们就可以省去这个麻烦的步骤。
+
+在这里，框架的内容其实不是重点，重点是，它是一个注解处理器的项目。为了让它的作用尽可能的放大，我对原框架做了简化，做了这套课程。
+
 # [基于 GitHub App 业务深度讲解 Kotlin1.2高级特性与框架设计](https://coding.imooc.com/class/232.html)
 
 我们在 2018年6月基于 Android 的开发环境推出了一套深入讲解 Kotlin 特性的课程，这套课程以大家最为熟悉的 GitHub App 开发作为整套课程的线索，将 Kotlin 的高级特性一一融入其中予以讲解，这其中我们对泛型、反射、属性代理、协程、Dsl 做了详尽的讲解和框架设计与开发，力求让大家能够对这些技能灵活运用。
@@ -28,14 +34,6 @@
 [在线收看全部视频（腾讯视频）](http://v.qq.com/boke/gplay/903446d6231d8612d198c58fb86eb4dc_t6d000101bd9lx1.html)
 	
 [下载全部视频（百度云）](http://pan.baidu.com/s/1nvGYAfB)
-
-关注微信公众号：Kotlin， 获取最新视频更新动态
-
-<img src="arts/Kotlin.jpg" width="250px"/>
-
-加入 QQ 群 Kotlin ，162452394：
-
-<img src="arts/e_group.png" width="250px"/>
 
 # 目录
 
@@ -152,9 +150,13 @@
 
 　　除了视频中提到的点之外还有一些细节，比如异常的捕获，集合类型的映射等等，大家自行参考官方文档即可。在了解了这些之后，你就可以放心大胆的在你的项目中慢慢渗透 Kotlin，让你的代码逐渐走向简洁与精致了。
 
-# 打赏
+# 获取最新动态
 
-录制这样一套视频确实是需要花费时间和心血的，如果您觉得它对您有帮助，可以通过微信和支付宝打赏，我将努力将视频做到最好！谢谢！
+关注微信公众号：Kotlin， 获取最新视频更新动态
 
-<img src="arts/contributes.jpg" width="450px"/>
+<img src="arts/Kotlin.jpg" width="250px"/>
+
+加入 QQ 群 Kotlin ，162452394：
+
+<img src="arts/e_group.png" width="250px"/>
 
