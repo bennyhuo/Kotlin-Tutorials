@@ -1,5 +1,9 @@
 [![GitHub license](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
+# [破解Android高级面试](https://coding.imooc.com/class/317.html)
+
+我一直做 Kotlin 的推广和宣传，发现大多数学习 Kotlin 的同学都是被行业“胁迫”不得不学。大家的诉求更多是怎么样找到一份好的工作，考虑到学习 Kotlin 的同学大多都是 Android 开发者，我就花了半年的功夫仔细整理了这一套视频出来，题目看上去不多，但每一个题目背后能引出的知识点可一点儿都不少。不求面面俱到，只求精准打击，面试过程中只要你能给面试官留下深刻的印象，那么这事儿就成了。
+
 # [注解处理器开发教程](https://github.com/enbandari/Apt-Tutorials)
 
 我在做 [基于 GitHub App 业务深度讲解 Kotlin1.2高级特性与框架设计](https://coding.imooc.com/class/232.html) 这门课的时候，顺便做了一个注解处理器的框架，叫 [Tieguanyin(铁观音)](https://github.com/enbandari/TieGuanYin)，这个框架主要是用来解决 Activity 跳转时传参的问题，我们知道 Activity 如果需要参数，那么我们只能非常繁琐的使用 `Intent` 来传递，有了这个框架我们就可以省去这个麻烦的步骤。
