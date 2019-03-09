@@ -1,6 +1,6 @@
 [![GitHub license](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
-# [破解Android高级面试](https://coding.imooc.com/class/317.html)
+# [破解Android高级面试](https://s.imooc.com/SBS30PR)
 
 我一直做 Kotlin 的推广和宣传，发现大多数学习 Kotlin 的同学都是被行业“胁迫”不得不学。大家的诉求更多是怎么样找到一份好的工作，考虑到学习 Kotlin 的同学大多都是 Android 开发者，我就花了半年的功夫仔细整理了这一套视频出来，题目看上去不多，但每一个题目背后能引出的知识点可一点儿都不少。不求面面俱到，只求精准打击，面试过程中只要你能给面试官留下深刻的印象，那么这事儿就成了。
 
