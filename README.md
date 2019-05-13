@@ -1,5 +1,9 @@
 [![GitHub license](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
+# [破解 Retrofit](https://www.imooc.com/learn/1128?mc_marking=5487b137ad904bd13590a053ede6da2f&mc_channel=syb19) 
+
+最近不少朋友反馈希望能看到一些深入分析框架的课程，正好前段时间对 Retrofit 又做了一次深入的分析，整理了一套免费视频分享给大家~ 
+
 # [破解Android高级面试](https://s.imooc.com/SBS30PR)
 
 我一直做 Kotlin 的推广和宣传，发现大多数学习 Kotlin 的同学都是被行业“胁迫”不得不学。大家的诉求更多是怎么样找到一份好的工作，考虑到学习 Kotlin 的同学大多都是 Android 开发者，我就花了半年的功夫仔细整理了这一套视频出来，题目看上去不多，但每一个题目背后能引出的知识点可一点儿都不少。不求面面俱到，只求精准打击，面试过程中只要你能给面试官留下深刻的印象，那么这事儿就成了。
