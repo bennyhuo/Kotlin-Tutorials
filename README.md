@@ -164,7 +164,5 @@
 
 <img src="arts/Kotlin.jpg" width="250px"/>
 
-加入 QQ 群 Kotlin ，162452394：
-
-<img src="arts/e_group.png" width="250px"/>
+大群已满~ 加入新 QQ 群 Kotlin 中文社区① 603441485
 
