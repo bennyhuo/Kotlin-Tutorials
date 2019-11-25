@@ -1,5 +1,12 @@
 [![GitHub license](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
+# [Kotlin 从入门到精通 视频教程](http://coding.imooc.com/class/398.html)
+
+Kotlin 1.3 是一个相对成熟和稳定的版本，这次基于  Kotlin 1.3.50 重新制作入门到精通的课程，相比之下新课知识点梳理更详细，内容干货更多，讲法也更成熟，希望能对大家有帮助。
+
+**视频地址：** [http://coding.imooc.com/class/398.html](http://coding.imooc.com/class/398.html)
+
+
 # [破解 Retrofit](https://www.imooc.com/learn/1128?mc_marking=5487b137ad904bd13590a053ede6da2f&mc_channel=syb19) 
 
 最近不少朋友反馈希望能看到一些深入分析框架的课程，正好前段时间对 Retrofit 又做了一次深入的分析，整理了一套免费视频分享给大家~ 
@@ -18,14 +25,6 @@
 
 我们在 2018年6月基于 Android 的开发环境推出了一套深入讲解 Kotlin 特性的课程，这套课程以大家最为熟悉的 GitHub App 开发作为整套课程的线索，将 Kotlin 的高级特性一一融入其中予以讲解，这其中我们对泛型、反射、属性代理、协程、Dsl 做了详尽的讲解和框架设计与开发，力求让大家能够对这些技能灵活运用。
 
-
-# [Kotlin 系统入门到进阶 视频教程](http://coding.imooc.com/class/108.html)
-
-这是什么？这是我最新制作的系统讲解 Kotlin 的视频教程，相比较早录制的视频，这套视频在专业团队的协助下完成，内容更适合初学者入门学习；另外，由于 Kotlin 版本更新非常快，新视频也结合了 1.1/1.2 的新特性为大家展开讲解，希望能对大家有帮助~
-
-**视频地址：** [http://coding.imooc.com/class/108.html](http://coding.imooc.com/class/108.html)
-
-> 已经更新了 **反射** **泛型** **跨平台** 的内容。
 
 # [Kotlin从入门到『放弃』系列 视频教程](https://github.com/enbandari/Kotlin-Tutorials) 
 
