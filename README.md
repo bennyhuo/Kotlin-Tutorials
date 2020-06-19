@@ -1,5 +1,18 @@
 [![GitHub license](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
+# [新书《深入理解 Kotlin 协程》](https://www.bennyhuo.com/project/kotlin-coroutines.html)
+
+Kotlin 协程可以说是截止目前为止 Kotlin 中最让人困惑的一部分内容了，官方文档也比较简略，对于初学者不够友好。今年我把过去在公众号和博客发布的协程相关的文章进行了整理和扩充，进一步完善了诸多细节编写了本书，有兴趣可以留意一下。
+
+## 随书源码
+
+本书**源码地址**：[《深入理解 Kotlin 协程》源码](https://github.com/enbandari/DiveIntoKotlinCoroutines-Sources)
+
+## 购买途径
+
+* 京东自营：[深入理解Kotlin协程](https://item.jd.com/12898592.html)
+* 当当自营：[深入理解Kotlin协程](http://product.dangdang.com/28973005.html)
+
 # [Kotlin 从入门到精通 视频教程](http://coding.imooc.com/class/398.html)
 
 Kotlin 1.3 是一个相对成熟和稳定的版本，这次基于  Kotlin 1.3.50 重新制作入门到精通的课程，相比之下新课知识点梳理更详细，内容干货更多，讲法也更成熟，希望能对大家有帮助。
