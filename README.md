@@ -1,5 +1,29 @@
 [![GitHub license](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
+# 2021 新计划
+
+准备做一个长期的 Kotlin 基础教程的编撰工作，作为官方文档的补充，大家有想法欢迎开 issue 跟我一起讨论。
+
+### 内容目标(暂定)：
+
+1. 主线内容涵盖 Kotlin common、Kotlin Jvm、Kotlin js、Kotlin Native，通用部分则不依赖 Kotlin Jvm（不像过去大家习惯的方式）
+2. Kotlin 的常见库的使用方法
+3. 编译器配置、Gradle DSL 等等
+
+### 输出形式：
+
+1. GitBook（主要目标，配合官网）
+2. 纸质书（不排除可能性）
+
+### 时间安排
+
+1. 大纲梳理，整体初步构思 - 2021.4 之前
+2. 基础部分 - 待细化
+3. Jvm 部分
+4. Js 部分
+5. Native 部分
+6. 框架部分（ktor、datetime、serialization...）
+
 # [新书《深入理解 Kotlin 协程》](https://www.bennyhuo.com/project/kotlin-coroutines.html)
 
 Kotlin 协程可以说是截止目前为止 Kotlin 中最让人困惑的一部分内容了，官方文档也比较简略，对于初学者不够友好。今年我把过去在公众号和博客发布的协程相关的文章进行了整理和扩充，进一步完善了诸多细节编写了本书，有兴趣可以留意一下。
