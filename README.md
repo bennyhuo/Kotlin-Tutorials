@@ -200,9 +200,8 @@ Kotlin 1.3 是一个相对成熟和稳定的版本，这次基于  Kotlin 1.3.50
 
 <img src="arts/Kotlin.jpg" width="250px"/>
 
-大群已满~ 
 
-加入新 QQ 群
+加入社区 QQ 群：
 
 Kotlin 中文社区群 大群：162452394 （已满）
 
