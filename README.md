@@ -26,6 +26,7 @@
 * 邮箱： [bennyhuo@kotliner.cn](mailto:bennyhuo@kotliner.cn) 
 * B 站账号：[**bennyhuo 不是算命的**](https://space.bilibili.com/28615855)，我个人的视频会优先在 B 站发布
 * 微信公众号 **Kotlin**，公众号主要用来发布 Kotlin 以及移动端开发相关的内容。
+
     <img src="legacy/arts/Kotlin.jpg" width="250px"/>
 * 加入社区 QQ 群
     * Kotlin 中文社区群 大群：162452394 （已满）
