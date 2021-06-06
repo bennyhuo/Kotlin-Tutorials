@@ -19,12 +19,33 @@
 
 还有一个相对长期的规划是做一套电子书，后面会在这个 [issue](https://github.com/bennyhuo/Kotlin-Tutorials/issues/36) 当中跟进，电子书的主体内容与我之前的课程 [Kotlin 从入门到精通 视频教程](http://coding.imooc.com/class/398.html) 会有一定程度上的重叠，但电子书的好处就是更新维护方便，相比之下视频教程制作成本太高且不易维护。
 
-有想法的小伙伴欢迎与我交流。
+有想法的小伙伴欢迎与我交流，也欢迎加入**催更群：966752510**一起讨论。
+
+## 视频清单
+
+### [Kotlin 杂谈 (持续更新中)](https://github.com/bennyhuo/Kotlin-Tutorials/issues/35)
+
+Kotlin 的一些很零碎的内容，放到这个栏目下面。
+
+- [x] [[Kotlin 杂谈] SAM 转换遇到包内可见](https://www.bilibili.com/video/BV1wB4y1g79W/)  >>[示例代码](code\Kotlin-Sample\src\main\java\com\bennyhuo\kotlin\samissue)
+- [x] [[Kotlin 杂谈] 使用协程实现轮询任务竟是这么简单](https://www.bilibili.com/video/BV11b4y1Z7sz/) >>[示例代码](code\Kotlin-Sample\src\main\java\com\bennyhuo\kotlin\scheduledtask)
+
+### [Gradle 迁移 KTS 系列视频 (2021.4 已完结)](https://github.com/bennyhuo/Kotlin-Tutorials/issues/25)
+
+前不久开源了一个小项目 [Android-LuaJavax](https://github.com/bennyhuo/Android-LuaJavax)，在改造 Gradle 脚本的时候也同时看到群里有不少小伙伴在问 KTS 编写 Gradle 脚本的问题，于是想要做几个视频来介绍下 Gradle 脚本从 Groovy 到 Kotlin 需要掌握哪些内容。
+
+- [x] [你的 Gradle脚本究竟是什么？](https://www.bilibili.com/video/BV18K4y1D7Yb/)
+- [x] [你的 Gradle 脚本是怎么运行起来的？](https://www.bilibili.com/video/BV1ep4y1h7qU/)
+- [x] [Gradle Project 的属性都是哪里来的？](https://www.bilibili.com/video/BV16h411D77Q/)
+- [x] [Gradle Task 创建的特殊语法](https://www.bilibili.com/video/BV1ib4y1D74X/)
+- [x] [快速迁移 Gradle 脚本至 KTS](https://www.bilibili.com/video/BV1Kf4y1p7zq/)
+- [x] [番外：如何调试 Gradle 源码](https://www.bilibili.com/video/BV1m54y1L7vK)
+- [x] [如何为 Gradle 的 KTS 脚本添加扩展？](https://www.bilibili.com/video/BV1BU4y1b7Wk/)
 
 ## 联系我
 
 * 邮箱： [bennyhuo@kotliner.cn](mailto:bennyhuo@kotliner.cn) 
-* B 站账号：[**bennyhuo 不是算命的**](https://space.bilibili.com/28615855)，我个人的视频会优先在 B 站发布
+* B 站账号：[**bennyhuo 不是算命的**](https://space.bilibili.com/28615855)，我的个人视频会优先在 B 站发布
 * 微信公众号 **Kotlin**，公众号主要用来发布 Kotlin 以及移动端开发相关的内容。
 
     <img src="legacy/arts/Kotlin.jpg" width="250px"/>
@@ -37,7 +58,7 @@
 
 ---
 
-以下是这几年我的一些积累和产出，有兴趣可以关注。
+以下是过去几年我的一些积累和产出，有兴趣可以关注。
 
 ## [《深入理解 Kotlin 协程》](https://www.bennyhuo.com/project/kotlin-coroutines.html) 2020.6 出版
 
