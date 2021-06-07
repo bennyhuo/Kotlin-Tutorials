@@ -22,6 +22,7 @@ dependencies {
     implementation("com.bennyhuo:portable-android-handler:1.0")
     implementation("io.reactivex.rxjava3:rxjava:3.0.13")
 
+    implementation(project(":opt-in-sample"))
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.0")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
