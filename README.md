@@ -30,6 +30,7 @@ Kotlin 的一些很零碎的内容，放到这个栏目下面。
 - [x] [[Kotlin 杂谈] SAM 转换遇到包内可见](https://www.bilibili.com/video/BV1wB4y1g79W/)  >>[示例代码](code\Kotlin-Sample\src\main\java\com\bennyhuo\kotlin\samissue)
 - [x] [[Kotlin 杂谈] 使用协程实现轮询任务竟是这么简单](https://www.bilibili.com/video/BV11b4y1Z7sz/) >>[示例代码](code\Kotlin-Sample\src\main\java\com\bennyhuo\kotlin\scheduledtask)
 - [x] [[Kotlin 协程 1.5] 什么？GlobalScope 竟被废弃了？](https://www.bilibili.com/video/BV1P64y1C7bF/) >>[示例代码](https://github.com/bennyhuo/Kotlin-Tutorials/blob/master/code/Kotlin-Sample/src/main/java/com/bennyhuo/kotlin/coroutinesupdate/DelicateGlobalScope.kt)  2021-06-09 18:00:00 发布
+- [x] [[Kotlin 杂谈] [Kotlin 杂谈] API 要谨慎使用？你可能需要 OptIn 注解！](https://www.bilibili.com/video/BV1Hh411a72d/) >>[示例代码](code\Kotlin-Sample\opt-in-sample)  2021-06-11 18:00:00 发布
 
 
 ### [Gradle 迁移 KTS 系列视频 (2021.4 已完结)](https://github.com/bennyhuo/Kotlin-Tutorials/issues/25)
