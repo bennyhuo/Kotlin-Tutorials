@@ -1,10 +1,12 @@
 package com.bennyhuo.kotlin.optin
 
-import com.bennyhuo.kotlin.deprecatedsample.UnsupportedApi
+import com.bennyhuo.kotlin.optinsample.SampleApi
+import com.bennyhuo.kotlin.optinsample.UnsupportedApi
+
 
 @UnsupportedApi
 fun main() {
-    val sampleApi = Api()
+    val sampleApi = SampleApi()
     sampleApi.stableAndFreeToUse()
     sampleApi.unstableAndPayAttention()
     sampleApi.removedApiDontUse()
