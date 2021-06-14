@@ -1,5 +1,7 @@
 package com.bennyhuo.kotlin.scheduledtask
 
+import com.bennyhuo.kotlin.api.Config
+import com.bennyhuo.kotlin.api.updateApi
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

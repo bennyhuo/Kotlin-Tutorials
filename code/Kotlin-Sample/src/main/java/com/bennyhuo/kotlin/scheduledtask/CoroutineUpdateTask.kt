@@ -1,5 +1,6 @@
 package com.bennyhuo.kotlin.scheduledtask
 
+import com.bennyhuo.kotlin.api.updateApi
 import kotlinx.coroutines.*
 
 class CoroutineUpdateTask : UpdateTask {

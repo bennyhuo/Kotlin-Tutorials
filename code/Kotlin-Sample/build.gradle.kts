@@ -1,5 +1,16 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
+buildscript {
+    val kotlin_version by extra("1.5.10")
+    repositories {
+        maven("https://mirrors.tencent.com/nexus/repository/maven-public/")
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle:4.1.3")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version")
+    }
+}
+
 plugins {
     java
     kotlin("jvm") version "1.5.10"
@@ -8,8 +19,10 @@ plugins {
 group = "com.bennyhuo.kotlin.hello"
 version = "1.0-SNAPSHOT"
 
-repositories {
-    maven("https://mirrors.tencent.com/nexus/repository/maven-public/")
+allprojects {
+    repositories {
+        maven("https://mirrors.tencent.com/nexus/repository/maven-public/")
+    }
 }
 
 dependencies {

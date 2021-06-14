@@ -1,0 +1,13 @@
+<configuration debug='true'>
+    <timestamp datePattern="yyyyMMdd" key="today" />
+
+    <appender name="LOGCAT" class="ch.qos.logback.classic.android.LogcatAppender">
+        <encoder>
+            <pattern>[%thread](%file:%line\)%M: %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="DEBUG">
+        <appender-ref ref="LOGCAT" />
+    </root>
+</configuration>

@@ -1,5 +1,6 @@
 package com.bennyhuo.kotlin.scheduledtask
 
+import com.bennyhuo.kotlin.api.updateApi
 import io.reactivex.rxjava3.core.Observable
 import io.reactivex.rxjava3.disposables.Disposable
 import io.reactivex.rxjava3.schedulers.Schedulers

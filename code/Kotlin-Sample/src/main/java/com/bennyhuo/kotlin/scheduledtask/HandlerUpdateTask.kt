@@ -3,6 +3,8 @@ package com.bennyhuo.kotlin.scheduledtask
 import android.os.Handler
 import android.os.HandlerThread
 import android.os.Message
+import com.bennyhuo.kotlin.api.Config
+import com.bennyhuo.kotlin.api.updateApi
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
