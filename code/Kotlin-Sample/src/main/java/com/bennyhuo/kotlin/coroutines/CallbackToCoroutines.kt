@@ -199,8 +199,10 @@ fun startTaskAsFlow() = callbackFlow {
 
         override fun onComplete() {
             trySendBlocking(OnComplete)
+            close()
         }
     })
+
 
     awaitClose {
         cancellable.cancel()
