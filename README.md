@@ -33,6 +33,7 @@ Kotlin 的一些很零碎的内容，放到这个栏目下面。
 - [x] [[Kotlin 杂谈] API 要谨慎使用？你可能需要 OptIn 注解！](https://www.bilibili.com/video/BV1Hh411a72d/) >>[示例代码](code\Kotlin-Sample\opt-in-sample)  
 - [x] [[Kotlin 杂谈] 要废弃 API ？@Deprecated 你学废了吗？](https://www.bilibili.com/video/BV1Mb4y1d7nv/) >>[示例代码](code/Kotlin-Sample/src/main/java/com/bennyhuo/kotlin/deprecated/DeprecatedSample.kt) 
 - [x] [[Kotlin 协程 1.5] 越更越惨的 Channel：我 TM 就是个倒霉蛋](https://www.bilibili.com/video/BV1rb4y1d7wL/) >>[示例代码](code/Kotlin-Sample/src/main/java/com/bennyhuo/kotlin/coroutinesupdate/NewChannelApis.kt) 
+- [x] [[Kotlin 协程] 反向操作：怎么把挂起函数转成阻塞函数？](https://www.bilibili.com/video/BV17U4y157Ay/)
 
 
 ### [Gradle 迁移 KTS 系列视频 (2021.4 已完结)](https://github.com/bennyhuo/Kotlin-Tutorials/issues/25)
