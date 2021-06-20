@@ -45,7 +45,13 @@ dependencies {
 
 val compileKotlin: KotlinCompile by tasks
 compileKotlin.kotlinOptions {
-    freeCompilerArgs = listOf("-Xopt-in=kotlin.RequiresOptIn")
+    freeCompilerArgs = listOf("-Xopt-in=kotlin.RequiresOptIn", "-Xextended-compiler-checks")
+    jvmTarget = "16"
+}
+
+java {
+    targetCompatibility = JavaVersion.VERSION_16
+    sourceCompatibility = JavaVersion.VERSION_16
 }
 
 tasks.getByName<Test>("test") {
