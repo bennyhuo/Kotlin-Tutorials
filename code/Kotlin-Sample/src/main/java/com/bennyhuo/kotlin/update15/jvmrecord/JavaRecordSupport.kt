@@ -1,4 +1,4 @@
-package com.bennyhuo.kotlin.update15
+package com.bennyhuo.kotlin.update15.jvmrecord
 
 /**
  * Created by benny at 2021/6/20 9:35.

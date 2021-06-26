@@ -1,3 +1,4 @@
+import org.gradle.model.internal.core.ModelNodes.withType
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 buildscript {
@@ -52,6 +53,10 @@ compileKotlin.kotlinOptions {
 java {
     targetCompatibility = JavaVersion.VERSION_16
     sourceCompatibility = JavaVersion.VERSION_16
+}
+
+tasks.withType<JavaCompile>().forEach {
+    it.options.compilerArgs.add("--enable-preview")
 }
 
 tasks.getByName<Test>("test") {
