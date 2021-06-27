@@ -27,10 +27,16 @@
 
 Kotlin 1.5 于 2021年5月份发布，主要更新内容其实集中在编译器和工具链上，所以开发者可感知的特性并不多 —— 大概要等 IR 编译器前端稳定了之后才会集中输出一波语法特性的大改动，等吧，那时候大概就是 Kotlin 2.0 了。
 
+**Kotlin 语言特性和标准库**
+
 - [x] [[Kotlin 1.5] Duration：这玩意也能实验这么久？！](https://www.bilibili.com/video/BV1Uh411a7SS/)
 - [x] [[Kotlin 1.5] 支持 JvmRecord：Java 开始抄作业了？](https://www.bilibili.com/video/BV1K54y1H7NL/)
 - [x] [[Kotlin 1.5] Kotlin 反手一个密封接口？谁抄谁还不一定呢！](https://www.bilibili.com/video/BV1Mw411o7sK/)
 - [x] [[Kotlin 1.5] inline(×) value(√) class：换个马甲还是另有所图？](https://www.bilibili.com/video/BV1k54y1H7NT/)  待发布
+
+------
+
+**Kotlin 协程**
 
 - [x] [[Kotlin 协程 1.5] 什么？GlobalScope 竟被废弃了？](https://www.bilibili.com/video/BV1P64y1C7bF/) >>[示例代码](https://github.com/bennyhuo/Kotlin-Tutorials/blob/master/code/Kotlin-Sample/src/main/java/com/bennyhuo/kotlin/coroutinesupdate/DelicateGlobalScope.kt)  
 - [x] [[Kotlin 协程 1.5] 越更越惨的 Channel：我 TM 就是个倒霉蛋](https://www.bilibili.com/video/BV1rb4y1d7wL/) >>[示例代码](code/Kotlin-Sample/src/main/java/com/bennyhuo/kotlin/coroutinesupdate/NewChannelApis.kt) 
