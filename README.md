@@ -32,7 +32,8 @@ Kotlin 1.5 于 2021年5月份发布，主要更新内容其实集中在编译器
 - [x] [[Kotlin 1.5] Duration：这玩意也能实验这么久？！](https://www.bilibili.com/video/BV1Uh411a7SS/)
 - [x] [[Kotlin 1.5] 支持 JvmRecord：Java 开始抄作业了？](https://www.bilibili.com/video/BV1K54y1H7NL/)
 - [x] [[Kotlin 1.5] Kotlin 反手一个密封接口？谁抄谁还不一定呢！](https://www.bilibili.com/video/BV1Mw411o7sK/)
-- [x] [[Kotlin 1.5] inline(×) value(√) class：换个马甲还是另有所图？](https://www.bilibili.com/video/BV1k54y1H7NT/)  待发布
+- [x] [[Kotlin 1.5] inline(×) value(√) class：换个马甲还是另有所图？](https://www.bilibili.com/video/BV1k54y1H7NT/)
+- [ ] [[编程语言引战] 辣鸡 Java，看看人家 C# 的值类型！](https://www.bilibili.com/video/BV15w411o7jq/) 这期视频主要是 Kotlin value class 话题的一个延伸，所以放到这里
 
 ------
 
@@ -54,6 +55,12 @@ Kotlin 的一些很零碎的内容，放到这个栏目下面。
 - [x] [[Kotlin 杂谈] API 要谨慎使用？你可能需要 OptIn 注解！](https://www.bilibili.com/video/BV1Hh411a72d/) >>[示例代码](code\Kotlin-Sample\opt-in-sample)  
 - [x] [[Kotlin 杂谈] 要废弃 API ？@Deprecated 你学废了吗？](https://www.bilibili.com/video/BV1Mb4y1d7nv/) >>[示例代码](code/Kotlin-Sample/src/main/java/com/bennyhuo/kotlin/deprecated/DeprecatedSample.kt) 
 
+### [工具和技巧](https://github.com/bennyhuo/Kotlin-Tutorials/issues/28)
+
+- [x] [[一周一个小技巧] 查看字节码，你们都用什么工具？](https://www.bilibili.com/video/BV1jv411H7pX/)
+- [x] [httpreq 介绍](https://www.bilibili.com/video/BV1bv41157xH/)，该工具可以方便地对接口进行测试 https://httpreq.com/  制作中
+- [x] [Pipedream 介绍](https://www.bilibili.com/video/BV13h411v7Fr/)，该工具实现更复杂的接口调试场景，可以自定义请求结果，还可以把请求数据存起来。
+- [x] [Android Studio 技巧之快捷键](https://www.bilibili.com/video/BV1g64y1279B/)  
 
 ### [Gradle 迁移 KTS 系列视频 (2021.4 已完结)](https://github.com/bennyhuo/Kotlin-Tutorials/issues/25)
 
