@@ -10,9 +10,15 @@ dependencies {
 }
 
 kotlin {
-    js(IR) {
-        nodejs {
-        }
+//    js(IR) {
+//        moduleName = "kotlin-js-ir"
+//        binaries.executable()
+//        nodejs()
+//    }
+
+    js {
+        moduleName = "kotlin-js-legacy"
         binaries.executable()
+        nodejs()
     }
 }

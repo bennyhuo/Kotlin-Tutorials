@@ -28,8 +28,12 @@ allprojects {
 
 dependencies {
     implementation(kotlin("stdlib"))
+    implementation(kotlin("reflect"))
+
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.5.0")
+
+    implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.2.1")
 
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:adapter-rxjava3:2.9.0")
@@ -48,6 +52,7 @@ val compileKotlin: KotlinCompile by tasks
 compileKotlin.kotlinOptions {
     freeCompilerArgs = listOf("-Xopt-in=kotlin.RequiresOptIn", "-Xextended-compiler-checks")
     jvmTarget = "16"
+    useIR = true
 }
 
 java {
