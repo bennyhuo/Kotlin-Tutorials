@@ -8,13 +8,15 @@ buildscript {
     }
     dependencies {
         classpath("com.android.tools.build:gradle:4.1.3")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
     }
 }
 
 plugins {
     java
     kotlin("jvm") version "1.5.10"
+    id("test-plugin")
+    id("com.bennyhuo.test-plugin")
 }
 
 group = "com.bennyhuo.kotlin.hello"
