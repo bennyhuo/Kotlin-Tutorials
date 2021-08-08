@@ -9,7 +9,7 @@ object Api {
     @Deprecated(
         message = "Use newApiForDeprecated instead.",
         replaceWith = ReplaceWith(
-            expression = "NewApi.newApiForDeprecated(key, value)",
+            expression = "NewApi.newApiForDeprecated(key, value, default)",
             imports = ["com.bennyhuo.kotlin.deprecatedsample.v2.NewApi"]
         )
     )

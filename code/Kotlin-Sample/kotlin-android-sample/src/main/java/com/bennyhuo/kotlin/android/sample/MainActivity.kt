@@ -3,7 +3,6 @@ package com.bennyhuo.kotlin.android.sample
 import android.animation.ObjectAnimator
 import android.os.Bundle
 import android.view.View
-import android.view.ViewPropertyAnimator
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import kotlinx.android.synthetic.main.activity_main.*

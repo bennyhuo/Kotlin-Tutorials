@@ -1,4 +1,3 @@
-import org.gradle.model.internal.core.ModelNodes.withType
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 buildscript {
@@ -7,7 +6,7 @@ buildscript {
         maven("https://mirrors.tencent.com/nexus/repository/maven-public/")
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:4.1.3")
+        //classpath("com.android.tools.build:gradle:4.1.3")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
     }
 }

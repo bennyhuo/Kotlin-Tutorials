@@ -35,6 +35,10 @@ suspend fun main() {
             }
         }
 
+        select<Unit> {
+            consumer.onJoin
+        }
+
 
         val consumer1 = produce<Int> {
 

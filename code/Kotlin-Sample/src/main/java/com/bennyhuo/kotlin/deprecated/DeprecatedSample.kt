@@ -1,7 +1,7 @@
 package com.bennyhuo.kotlin.deprecated
 
-import com.bennyhuo.kotlin.deprecatedsample.v2.NewApi
+import com.bennyhuo.kotlin.deprecatedsample.Api
 
 fun main() {
-    NewApi.newApiForDeprecated("name", "bennyhuo 不是算命的")
+    Api.deprecatedDontUse("name", "bennyhuo 不是算命的")
 }
