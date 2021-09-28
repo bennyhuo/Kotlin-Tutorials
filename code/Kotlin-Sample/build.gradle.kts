@@ -1,7 +1,6 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 buildscript {
-    val kotlin_version by extra("1.5.10")
     repositories {
         maven("https://mirrors.tencent.com/nexus/repository/maven-public/")
     }
@@ -13,7 +12,7 @@ buildscript {
 
 plugins {
     java
-    kotlin("jvm") version "1.5.10"
+    kotlin("jvm") version kotlinVersion
     id("test-plugin")
     id("com.bennyhuo.test-plugin")
 }
