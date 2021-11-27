@@ -30,16 +30,19 @@ dependencies {
     implementation(kotlin("stdlib"))
     implementation(kotlin("reflect"))
 
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.5.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinCoroutineVersion")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:$kotlinCoroutineVersion")
 
-    implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.2.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-datetime:$kotlinDateTimeVersion")
 
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:adapter-rxjava3:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("com.bennyhuo:portable-android-handler:1.0")
     implementation("io.reactivex.rxjava3:rxjava:3.0.13")
+    
+    implementation("org.apache.logging.log4j:log4j-core:2.14.1")
+    implementation("org.apache.logging.log4j:log4j-api:2.14.1")
 
     implementation(project(":opt-in-sample"))
     implementation(project(":deprecated-sample"))
@@ -50,19 +53,22 @@ dependencies {
 
 val compileKotlin: KotlinCompile by tasks
 compileKotlin.kotlinOptions {
-    freeCompilerArgs = listOf("-Xopt-in=kotlin.RequiresOptIn", "-Xextended-compiler-checks")
-    jvmTarget = "16"
-    useIR = true
+    freeCompilerArgs = listOf(
+        "-Xopt-in=kotlin.RequiresOptIn",
+        "-Xextended-compiler-checks",
+        "-Xenable-builder-inference"
+    )
+    jvmTarget = "17"
 }
 
 java {
-    targetCompatibility = JavaVersion.VERSION_16
-    sourceCompatibility = JavaVersion.VERSION_16
+    targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_17
 }
 
-tasks.withType<JavaCompile>().forEach {
-    it.options.compilerArgs.add("--enable-preview")
-}
+//tasks.withType<JavaCompile>().forEach {
+//    it.options.compilerArgs.add("--enable-preview")
+//}
 
 tasks.getByName<Test>("test") {
     useJUnitPlatform()

@@ -1,2 +1,3 @@
-val kotlinVersion = "1.5.30"
-val kotlinCoroutineVersion = "1.5.0"
+val kotlinVersion = "1.6.0"
+val kotlinCoroutineVersion = "1.6.0-RC"
+val kotlinDateTimeVersion = "0.3.1"
