@@ -56,14 +56,14 @@ compileKotlin.kotlinOptions {
     freeCompilerArgs = listOf(
         "-Xopt-in=kotlin.RequiresOptIn",
         "-Xextended-compiler-checks",
-        "-Xenable-builder-inference"
+        "-Xenable-builder-inference",
+        "-Xcontext-receivers"
     )
-    jvmTarget = "17"
 }
 
 java {
-    targetCompatibility = JavaVersion.VERSION_17
-    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_11
+    sourceCompatibility = JavaVersion.VERSION_11
 }
 
 //tasks.withType<JavaCompile>().forEach {
