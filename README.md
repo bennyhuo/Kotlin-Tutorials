@@ -23,56 +23,9 @@
 
 ## 视频清单
 
-### Kotlin 1.5 相关更新
+为方便编辑，现迁移至 [wolai](https://www.wolai.com/) 页面维护：
 
-Kotlin 1.5 于 2021年5月份发布，主要更新内容其实集中在编译器和工具链上，所以开发者可感知的特性并不多 —— 大概要等 IR 编译器前端稳定了之后才会集中输出一波语法特性的大改动，等吧，那时候大概就是 Kotlin 2.0 了。
-
-**Kotlin 语言特性和标准库**
-
-- [x] [[Kotlin 1.5] Duration：这玩意也能实验这么久？！](https://www.bilibili.com/video/BV1Uh411a7SS/)
-- [x] [[Kotlin 1.5] 支持 JvmRecord：Java 开始抄作业了？](https://www.bilibili.com/video/BV1K54y1H7NL/)
-- [x] [[Kotlin 1.5] Kotlin 反手一个密封接口？谁抄谁还不一定呢！](https://www.bilibili.com/video/BV1Mw411o7sK/)
-- [x] [[Kotlin 1.5] inline(×) value(√) class：换个马甲还是另有所图？](https://www.bilibili.com/video/BV1k54y1H7NT/)
-- [ ] [[编程语言引战] 辣鸡 Java，看看人家 C# 的值类型！](https://www.bilibili.com/video/BV15w411o7jq/) 这期视频主要是 Kotlin value class 话题的一个延伸，所以放到这里
-
-------
-
-**Kotlin 协程**
-
-- [x] [[Kotlin 协程 1.5] 什么？GlobalScope 竟被废弃了？](https://www.bilibili.com/video/BV1P64y1C7bF/) >>[示例代码](https://github.com/bennyhuo/Kotlin-Tutorials/blob/master/code/Kotlin-Sample/src/main/java/com/bennyhuo/kotlin/coroutinesupdate/DelicateGlobalScope.kt)  
-- [x] [[Kotlin 协程 1.5] 越更越惨的 Channel：我 TM 就是个倒霉蛋](https://www.bilibili.com/video/BV1rb4y1d7wL/) >>[示例代码](code/Kotlin-Sample/src/main/java/com/bennyhuo/kotlin/coroutinesupdate/NewChannelApis.kt) 
-- [x] [[Kotlin 协程 1.5] Flow 有两个 API 转正：一个是另一个的马甲？](https://www.bilibili.com/video/BV1vg411g7X4/)
-- [x] [[Kotlin 协程] 反向操作：怎么把挂起函数转成阻塞函数？](https://www.bilibili.com/video/BV17U4y157Ay/)
-- [x] [[Kotlin 协程] 常规操作：怎么把回调转成挂起函数？](https://www.bilibili.com/video/BV13y4y1g7g3/)
-
-
-### [Kotlin 杂谈 (持续更新中)](https://github.com/bennyhuo/Kotlin-Tutorials/issues/35)
-
-Kotlin 的一些很零碎的内容，放到这个栏目下面。
-
-- [x] [[Kotlin 杂谈] SAM 转换遇到包内可见](https://www.bilibili.com/video/BV1wB4y1g79W/)  >>[示例代码](code\Kotlin-Sample\src\main\java\com\bennyhuo\kotlin\samissue)
-- [x] [[Kotlin 杂谈] 使用协程实现轮询任务竟是这么简单](https://www.bilibili.com/video/BV11b4y1Z7sz/) >>[示例代码](code\Kotlin-Sample\src\main\java\com\bennyhuo\kotlin\scheduledtask)
-- [x] [[Kotlin 杂谈] API 要谨慎使用？你可能需要 OptIn 注解！](https://www.bilibili.com/video/BV1Hh411a72d/) >>[示例代码](code\Kotlin-Sample\opt-in-sample)  
-- [x] [[Kotlin 杂谈] 要废弃 API ？@Deprecated 你学废了吗？](https://www.bilibili.com/video/BV1Mb4y1d7nv/) >>[示例代码](code/Kotlin-Sample/src/main/java/com/bennyhuo/kotlin/deprecated/DeprecatedSample.kt) 
-
-### [工具和技巧](https://github.com/bennyhuo/Kotlin-Tutorials/issues/28)
-
-- [x] [[一周一个小技巧] 查看字节码，你们都用什么工具？](https://www.bilibili.com/video/BV1jv411H7pX/)
-- [x] [httpreq 介绍](https://www.bilibili.com/video/BV1bv41157xH/)，该工具可以方便地对接口进行测试 https://httpreq.com/  制作中
-- [x] [Pipedream 介绍](https://www.bilibili.com/video/BV13h411v7Fr/)，该工具实现更复杂的接口调试场景，可以自定义请求结果，还可以把请求数据存起来。
-- [x] [Android Studio 技巧之快捷键](https://www.bilibili.com/video/BV1g64y1279B/)  
-
-### [Gradle 迁移 KTS 系列视频 (2021.4 已完结)](https://github.com/bennyhuo/Kotlin-Tutorials/issues/25)
-
-前不久开源了一个小项目 [Android-LuaJavax](https://github.com/bennyhuo/Android-LuaJavax)，在改造 Gradle 脚本的时候也同时看到群里有不少小伙伴在问 KTS 编写 Gradle 脚本的问题，于是想要做几个视频来介绍下 Gradle 脚本从 Groovy 到 Kotlin 需要掌握哪些内容。
-
-- [x] [你的 Gradle脚本究竟是什么？](https://www.bilibili.com/video/BV18K4y1D7Yb/)
-- [x] [你的 Gradle 脚本是怎么运行起来的？](https://www.bilibili.com/video/BV1ep4y1h7qU/)
-- [x] [Gradle Project 的属性都是哪里来的？](https://www.bilibili.com/video/BV16h411D77Q/)
-- [x] [Gradle Task 创建的特殊语法](https://www.bilibili.com/video/BV1ib4y1D74X/)
-- [x] [快速迁移 Gradle 脚本至 KTS](https://www.bilibili.com/video/BV1Kf4y1p7zq/)
-- [x] [番外：如何调试 Gradle 源码](https://www.bilibili.com/video/BV1m54y1L7vK)
-- [x] [如何为 Gradle 的 KTS 脚本添加扩展？](https://www.bilibili.com/video/BV1BU4y1b7Wk/)
+* [Kotlin 视频清单](https://www.wolai.com/2uvNjQzPVDiApxKXQJdpSv)
 
 ## 联系我
 
