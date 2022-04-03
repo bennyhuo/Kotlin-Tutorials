@@ -15,32 +15,19 @@
  
 所以，作为“布道者”，过去我们总是想着怎么让更多的开发者知道 Kotlin，现在我们则需要提供更多的 Kotlin 的学习材料，来帮助大家更好的使用 Kotlin。
 
-我目前主要的想法就是做一些视频放到 B 站上（账号：[**bennyhuo 不是算命的**](https://space.bilibili.com/28615855)），当然视频的内容也不限于 Kotlin 本身。这个计划已经开始尝试实施了，内容的规划在这个仓库的 [issue](https://github.com/bennyhuo/Kotlin-Tutorials/issues) 当中跟进，例如前不久刚刚录制的几个 [Gradle 迁移 KTS 的视频](https://github.com/bennyhuo/Kotlin-Tutorials/issues/25)。
+我目前主要的想法就是做一些视频放到 B 站上（账号：[**bennyhuo 不是算命的**](https://space.bilibili.com/28615855)），当然视频的内容也不限于 Kotlin 本身。
 
-还有一个相对长期的规划是做一套电子书，后面会在这个 [issue](https://github.com/bennyhuo/Kotlin-Tutorials/issues/36) 当中跟进，电子书的主体内容与我之前的课程 [Kotlin 从入门到精通 视频教程](http://coding.imooc.com/class/398.html) 会有一定程度上的重叠，但电子书的好处就是更新维护方便，相比之下视频教程制作成本太高且不易维护。
+有想法的小伙伴欢迎与我交流，也欢迎加入**催更群：619509258**一起讨论。
 
-有想法的小伙伴欢迎与我交流，也欢迎加入**催更群：966752510**一起讨论。
+## 内容清单
 
-## 视频清单
-
-为方便编辑，现迁移至 [wolai](https://www.wolai.com/) 页面维护：
-
-* [Kotlin 视频清单](https://www.wolai.com/2uvNjQzPVDiApxKXQJdpSv)
+内容清单已迁移至我的个人主页：[Benny Huo 的专栏](https://www.bennyhuo.com/book/)。
 
 ## 联系我
 
 * 邮箱： [bennyhuo@kotliner.cn](mailto:bennyhuo@kotliner.cn) 
 * B 站账号：[**bennyhuo 不是算命的**](https://space.bilibili.com/28615855)，我的个人视频会优先在 B 站发布
-* 微信公众号 **Kotlin**，公众号主要用来发布 Kotlin 以及移动端开发相关的内容。
-
-    <img src="legacy/arts/Kotlin.jpg" width="250px"/>
-* 加入社区 QQ 群
-    * Kotlin 中文社区群 大群：162452394 （已满）
-    * Kotlin 中文社区群 ① 群：603441485 （已满）
-    * Kotlin 中文社区群 ② 群：751395597
-
-* 当然，**北京猿辅导**的小伙伴也可以找我面聊 ：）
-
+* 微信公众号 **bennyhuo**
 ---
 
 以下是过去几年我的一些积累和产出，有兴趣可以关注。
