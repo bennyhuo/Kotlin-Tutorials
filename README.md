@@ -32,22 +32,37 @@
 
 以下是过去几年我的一些积累和产出，有兴趣可以关注。
 
+## [《深入实践 Kotlin 元编程》](https://www.bennyhuo.com/project/kotlin-metaprogramming.html) 2023.9 出版
+
+这是一本从基础知识、设计思想、技术方案、应用方法、实践技巧5个维度系统讲解Kotlin元编程，并以此大幅提升Kotlin工程师开发水平、研发效率和开发体验的著作。
+
+本书的出版打破了元编程技术资料少、门槛高的行业现状。本书包含大量案例，这些案例大多来自真实的生产实践，相对成熟和完善，可以作为元编程项目的范本。同时，本书提供大量的代码，为了提升阅读体验，在注释、书写和排版等方面对代码做了精心的优化。
+
+## 随书源码
+
+本书**源码地址**：[《深入实践 Kotlin 元编程》源码](https://github.com/bennyhuo/KotlinMetaProgrammingInAction-Sources)
+
+## 购买途径
+
+* 京东自营：[深入实践 Kotlin 元编程](https://item.jd.com/14097194.html)
+* 当当自营：[深入实践 Kotlin 元编程](https://product.dangdang.com/29613442.html)
+
 ## [《深入理解 Kotlin 协程》](https://www.bennyhuo.com/project/kotlin-coroutines.html) 2020.6 出版
 
 Kotlin 协程可以说是截止目前为止 Kotlin 中最让人困惑的一部分内容了，官方文档也比较简略，对于初学者不够友好。今年我把过去在公众号和博客发布的协程相关的文章进行了整理和扩充，进一步完善了诸多细节编写了本书，有兴趣可以留意一下。
 
 ### 随书源码
 
-本书**源码地址**：[《深入理解 Kotlin 协程》源码](https://github.com/enbandari/DiveIntoKotlinCoroutines-Sources)
+本书**源码地址**：[《深入理解 Kotlin 协程》源码](https://github.com/bennyhuo/DiveIntoKotlinCoroutines-Sources)
 
 ### 购买途径
 
 * 京东自营：[深入理解Kotlin协程](https://item.jd.com/12898592.html)
 * 当当自营：[深入理解Kotlin协程](http://product.dangdang.com/28973005.html)
 
-## [注解处理器开发教程](https://github.com/enbandari/Apt-Tutorials)
+## [注解处理器开发教程](https://github.com/bennyhuo/Apt-Tutorials)
 
-我在做 [基于 GitHub App 业务深度讲解 Kotlin1.2高级特性与框架设计](https://coding.imooc.com/class/232.html)(目前已经下线) 这门课的时候，顺便做了一个注解处理器的框架，叫 [Tieguanyin(铁观音)](https://github.com/enbandari/TieGuanYin)，这个框架主要是用来解决 Activity 跳转时传参的问题，我们知道 Activity 如果需要参数，那么我们只能非常繁琐的使用 `Intent` 来传递，有了这个框架我们就可以省去这个麻烦的步骤。
+我在做 [基于 GitHub App 业务深度讲解 Kotlin1.2高级特性与框架设计](https://coding.imooc.com/class/232.html)(目前已经下线) 这门课的时候，顺便做了一个注解处理器的框架，叫 [Tieguanyin(铁观音)](https://github.com/bennyhuo/TieGuanYin)，这个框架主要是用来解决 Activity 跳转时传参的问题，我们知道 Activity 如果需要参数，那么我们只能非常繁琐的使用 `Intent` 来传递，有了这个框架我们就可以省去这个麻烦的步骤。
 
 在这里，框架的内容其实不是重点，重点是，它是一个注解处理器的项目。为了让它的作用尽可能的放大，我对原框架做了简化，做了这套课程。
 
